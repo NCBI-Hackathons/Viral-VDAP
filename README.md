@@ -1,5 +1,14 @@
 # dsVirus-variant-discovery-and-annotation-pipeline
 
+## Team
+
+Elena Maria Cornejo Castro - team lead
+Eneida Hatcher - writer
+Sara Jones
+Sasha Mushegian - writer
+Yunfan Fan
+Rashmi Naidu
+
 ## Please cite our work -- here is the ICMJE Standard Citation:
 
 ### ...and a link to the DOI:

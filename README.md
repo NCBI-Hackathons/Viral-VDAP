@@ -30,7 +30,6 @@ We have constructed a pipeline using freely available tools for quality control,
 -- Begin typing the name of your virus. You can use taxonomic groups (e.g., Human gammaherpesvirus 4) or common names (e.g., Kaposi's sarcoma-associated herpesvirus, don’t worry, it’s an autofill, you don’t have to type the whole thing). 
 -- On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.” Select the sequence you want, then download the FASTA file.
 
-
 ## Overview of pipeline steps
 - Quality filtering, trimming, and minimum length filtering (Trimmomatic)
 
@@ -40,16 +39,12 @@ Alignment: decision to be made between two different alignment approaches
 - alignment of reference-based and de novo consensus sequences to reference (Mummer)
 - Quality of the consensus sequences will be compared with respect to small gaps and repetitive regions. One alignment approach will be chosen to include in pipeline.
 
-
-
-
 ## Software citations, versions and parameters
 **Trimmomatic v.0.39** 
 - Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
 
 Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
 - This line in the 1.trim.sh specifies that reads are to have a minimum average quality score of 30, low quality (<3) leading and trailing bases trimmed, and a minimum length after trimming of 50. All other settings as default. 
-
 
 **Bowtie2 v2.3.5.1**  
 - Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.
@@ -61,12 +56,7 @@ Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MI
 
 # How to use <this software>
 
-# File structure diagram 
-#### _Define paths, variable names, etc_
-
 # Installation options:
-
-We provide two options for installing <this software>: Docker or directly from Github.
 
 ### Docker
 

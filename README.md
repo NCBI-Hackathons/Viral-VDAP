@@ -20,7 +20,7 @@ We have constructed a pipeline using freely available tools for quality control,
 
 Alignment: decision to be made between two different alignment approaches
 - Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools)
-- De novo sequence assembly (SPAdes)
+- De novo sequence assembly (SPAdes) -> Align scaffolds to reference (nucmer) -> Condense aligned scaffolds into a consensus/draft genome (???)
 - alignment of reference-based and de novo consensus sequences to reference (Mummer)
 - Quality of the consensus sequences will be compared with respect to small gaps and repetitive regions. One alignment approach will be chosen to include in pipeline.
 

@@ -45,10 +45,14 @@ Alignment: decision to be made between two different alignment approaches
 
 ## Software citations, versions and parameters
 Trimmomatic v.0.39
+`ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
+
 - Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
-- Paired end mode, average phred score > 30, minimum length > 50, low quality <3 leading and trailing bases removed, all other parameters  kept as default
 
 Bowtie2 v2.3.5.1
+- All default settings
+
+Samtools
 - All default settings
 
 

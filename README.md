@@ -17,12 +17,12 @@ We have constructed a pipeline using freely available tools for quality control,
 
 ## Is this the right pipeline for you?
 
-*Your virus*
+**Your virus**
 - Very low diversity virus populations, such as gammaherpesviruses. This tool is not suitable for viruses believed to exist as quasispecies (e.g., most RNA viruses), or for calling minority variants.
 - Tested on data from enriched samples which have a higher proportion of viral reads compared to metagenomics or non-cultured samples.
 - Input data should consist of paired-end reads from targeted sequencing. There is not a step to search for & remove host reads, since there should be very few host reads after targeted sequencing. Host reads are expected to be in a low enough concentration that they will be excluded when the consensus is built.
 
-*What you’ll need:*
+**What you’ll need:**
 - FASTQ files of your NGS sequencing results
 - FASTA files of reference sequence
 -- Assuming you know the species you sampled,
@@ -30,31 +30,43 @@ We have constructed a pipeline using freely available tools for quality control,
 -- Begin typing the name of your virus. You can use taxonomic groups (e.g., Human gammaherpesvirus 4) or common names (e.g., Kaposi's sarcoma-associated herpesvirus, don’t worry, it’s an autofill, you don’t have to type the whole thing). 
 -- On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.” Select the sequence you want, then download the FASTA file.
 
-
 ## Overview of pipeline steps
-- Quality filtering, trimming, and minimum length filtering (Trimmomatic v0.39)
+- Quality filtering, trimming, and minimum length filtering (Trimmomatic)
 
 Alignment: decision to be made between two different alignment approaches
 - Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools)
-- De novo sequence assembly (SPAdes) -> Align scaffolds to reference (nucmer) -> Condense aligned scaffolds into a consensus/draft genome (???)
+- De novo sequence assembly (SPAdes) -> Align scaffolds to reference (nucmer) -> Condense aligned scaffolds into a consensus/draft genome (Medusa)
 - alignment of reference-based and de novo consensus sequences to reference (Mummer)
 - Quality of the consensus sequences will be compared with respect to small gaps and repetitive regions. One alignment approach will be chosen to include in pipeline.
 
+## Software citations, versions and parameters
+**Trimmomatic v.0.39** 
+- Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
 
+Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
+- This line in the 1.trim.sh specifies that reads are to have a minimum average quality score of 30, low quality (<3) leading and trailing bases trimmed, and a minimum length after trimming of 50. All other settings as default. 
 
+**Bowtie2 v2.3.5.1**  
+- Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.
 
-Overview Diagram
+`All default settings`  
+
+**Samtools**  
+- deduplication: `3.consensus.sh` (`All default settings`)
+- consensus generation: vcfutils and consensuscall-c to create a consesus sequnce (FASTQ) from bowtie-produced alignments, then convert to FASTA
+- variant calling: 
+
+**SPAdes v3.13.0**
+
+Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
+- The line listed in sbatch.sh specifies that SPAdes should run in assembly module only (--only-assembler) and applies --careful to try to reduce the number of mismatches and short indels. The k parameter refers to the k-mer sizes. We used a range of sizes from 21 to 77. The t parameter refers to the number of threads to run the software. 
+
+**Medusa v1.6**  
+`All default settings`
 
 # How to use <this software>
 
-# Software Workflow Diagram
-
-# File structure diagram 
-#### _Define paths, variable names, etc_
-
 # Installation options:
-
-We provide two options for installing <this software>: Docker or directly from Github.
 
 ### Docker
 
@@ -64,22 +76,7 @@ The Docker image contains <this software> as well as a webserver and FTP server 
 2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
 3. Edit the configuration files as below
 
-### Installing <this software> from Github
-
-1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-2. Edit the configuration files as below
-3. `sh server/<this software>.sh` to test
-4. Add cron job as required (to execute <this software>.sh script)
-
-### Configuration
-
-```Examples here```
-
 # Testing
-
-We tested four different tools with <this software>. They can be found in [server/tools/](server/tools/) . 
-
-# Additional Functionality
 
 ### DockerFile
 
@@ -89,12 +86,3 @@ We tested four different tools with <this software>. They can be found in [serve
   2. `cd server`
   3. `docker build --rm -t <this software>/<this software> .`
   4. `docker run -t -i <this software>/<this software>`
-  
-### Website
-
-There is also a Docker image for hosting the main website. This should only be used for debug purposes.
-
-  1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
-  2. `cd Website`
-  3. `docker build --rm -t <this software>/website .`
-  4. `docker run -t -i <this software>/website`

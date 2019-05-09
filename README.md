@@ -49,11 +49,11 @@ Trimmomatic v.0.39
 
 - Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
 
-Bowtie2 v2.3.5.1
-- All default settings
+Bowtie2 v2.3.5.1  
+`All default settings`  
 
-Samtools
-- All default settings
+Samtools  
+`All default settings`
 
 
 

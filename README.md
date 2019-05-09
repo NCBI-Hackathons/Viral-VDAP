@@ -44,7 +44,7 @@ Alignment: decision to be made between two different alignment approaches
 
 
 ## Software citations, versions and parameters
-Trimmomatic v.0.39
+Trimmomatic v.0.39  
 `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
 
 - Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170

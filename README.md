@@ -61,7 +61,7 @@ Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MI
 Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
 - The line listed in sbatch.sh specifies that SPAdes should run in assembly module only (--only-assembler) and applies --careful to try to reduce the number of mismatches and short indels. The k parameter refers to the k-mer sizes. We used a range of sizes from 21 to 77. The t parameter refers to the number of threads to run the software. 
 
-**Medusa v1.6**
+**Medusa v1.6**  
 `All default settings`
 
 # How to use <this software>

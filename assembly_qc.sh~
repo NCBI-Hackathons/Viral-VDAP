@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $1 == contigs ] ; then
+    echo num_contigs,n50,minlen,maxlen
+    for i in jsc bc bcbl ;
+    do
+	python ~/Code/utils/qc/asm_assess.py -i ~/data/spades/$i/contigs.fasta
+    done
+fi

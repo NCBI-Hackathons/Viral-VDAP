@@ -32,7 +32,7 @@ We have constructed a pipeline using freely available tools for quality control,
 
 
 ## Overview of pipeline steps
-- Quality filtering, trimming, and minimum length filtering (Trimmomatic v0.39)
+- Quality filtering, trimming, and minimum length filtering (Trimmomatic)
 
 Alignment: decision to be made between two different alignment approaches
 - Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools)
@@ -43,7 +43,10 @@ Alignment: decision to be made between two different alignment approaches
 
 
 
-Overview Diagram
+##Software citations, versions and parameters
+Trimmomatic v.0.39
+Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
+Paired end mode, average phred score > 30, minimum length > 50, low quality <3 leading and trailing bases removed, all other parameters  kept as default
 
 # How to use <this software>
 

@@ -17,12 +17,12 @@ We have constructed a pipeline using freely available tools for quality control,
 
 ## Is this the right pipeline for you?
 
-*Your virus*
+**Your virus**
 - Very low diversity virus populations, such as gammaherpesviruses. This tool is not suitable for viruses believed to exist as quasispecies (e.g., most RNA viruses), or for calling minority variants.
 - Tested on data from enriched samples which have a higher proportion of viral reads compared to metagenomics or non-cultured samples.
 - Input data should consist of paired-end reads from targeted sequencing. There is not a step to search for & remove host reads, since there should be very few host reads after targeted sequencing. Host reads are expected to be in a low enough concentration that they will be excluded when the consensus is built.
 
-*What you’ll need:*
+**What you’ll need:**
 - FASTQ files of your NGS sequencing results
 - FASTA files of reference sequence
 -- Assuming you know the species you sampled,
@@ -44,17 +44,19 @@ Alignment: decision to be made between two different alignment approaches
 
 
 ## Software citations, versions and parameters
-Trimmomatic v.0.39  
+**Trimmomatic v.0.39** 
 - Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
 
 Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
 - This line in the 1.trim.sh specifies that reads are to have a minimum average quality score of 30, low quality (<3) leading and trailing bases trimmed, and a minimum length after trimming of 50. All other settings as default. 
 
 
-Bowtie2 v2.3.5.1  
+**Bowtie2 v2.3.5.1**  
+- Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.
+
 `All default settings`  
 
-Samtools  
+**Samtools**  
 `All default settings`
 
 # How to use <this software>

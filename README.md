@@ -9,13 +9,29 @@ Sasha Mushegian - writer
 Yunfan Fan  
 Rashmi Naidu
 
-## Introduction
+# Introduction
 
 Whole-genome sequencing of pathogenic viruses has the potential to improve surveillance, classification of disease subtypes, and association of viral subtypes with disease mechanisms. In order for viral genomic data to be universally interpretable and comparable, however, best practices must be established for quality control and variant calling. This is especially challenging for gamma-herpesvirus genomes, which are relatively large (>170 kb) and contain integrated human genes. Whole-genome analysis of these viruses is typically done on an ad-hoc basis by researchers working in isolation, making it difficult to know what types of comparative analyses are possible.
 
 We have constructed a pipeline using freely available tools for quality control, alignment and SNP calling of double-stranded DNA virus paired-end short reads with the aim of providing researchers with interoperable consensus sequences and variant lists to be used for downstream analyses.    
 
-# Overview of pipeline steps
+## Is this the right pipeline for you?
+
+*Your virus*
+- Very low diversity virus populations, such as gammaherpesviruses. This tool is not suitable for viruses believed to exist as quasispecies (e.g., most RNA viruses), or for calling minority variants.
+- Tested on data from enriched samples which have a higher proportion of viral reads compared to metagenomics or non-cultured samples.
+- Input data should consist of paired-end reads from targeted sequencing. There is not a step to search for & remove host reads, since there should be very few host reads after targeted sequencing. Host reads are expected to be in a low enough concentration that they will be excluded when the consensus is built.
+
+*What you’ll need:*
+- FASTQ files of your NGS sequencing results
+- FASTA files of reference sequence
+-- Assuming you know the species you sampled,
+-- Go to https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/find-data/virus and select “Search by Virus”
+-- Begin typing the name of your virus. You can use taxonomic groups (e.g., Human gammaherpesvirus 4) or common names (e.g., Kaposi's sarcoma-associated herpesvirus, don’t worry, it’s an autofill, you don’t have to type the whole thing). 
+-- On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.” Select the sequence you want, then download the FASTA file.
+
+
+## Overview of pipeline steps
 - Quality filtering, trimming, and minimum length filtering (Trimmomatic v0.39)
 
 Alignment: decision to be made between two different alignment approaches

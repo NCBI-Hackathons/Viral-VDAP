@@ -15,7 +15,17 @@ Whole-genome sequencing of pathogenic viruses has the potential to improve surve
 
 We have constructed a pipeline using freely available tools for quality control, alignment and SNP calling of double-stranded DNA virus paired-end short reads with the aim of providing researchers with interoperable consensus sequences and variant lists to be used for downstream analyses.    
 
-# What is <this software>?
+# Overview of pipeline steps
+- Quality filtering, trimming, and minimum length filtering (Trimmomatic v0.39)
+
+Alignment: decision to be made between two different alignment approaches
+- Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools)
+- De novo sequence assembly (SPAdes)
+- alignment of reference-based and de novo consensus sequences to reference (Mummer)
+- Quality of the consensus sequences will be compared with respect to small gaps and repetitive regions. One alignment approach will be chosen to include in pipeline.
+
+
+
 
 Overview Diagram
 

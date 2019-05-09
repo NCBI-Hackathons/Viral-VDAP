@@ -52,7 +52,7 @@ Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MI
 `All default settings`  
 
 **Samtools**  
-- deduplication: 3.consensus.sh `All default settings`
+- deduplication: `3.consensus.sh` (`All default settings`)
 - consensus generation: 
 - variant calling: 
 

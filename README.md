@@ -31,12 +31,10 @@ We have constructed a pipeline using freely available tools for quality control,
 -- On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.” Select the sequence you want, then download the FASTA file.
 
 ## Overview of pipeline steps
-- Quality filtering, trimming, and minimum length filtering (Trimmomatic)
-- De novo sequence assembly (SPAdes) -> Align scaffolds to reference and condense aligned scaffolds into a consensus/draft genome (Medusa)
+- QC: Quality filtering, trimming, and minimum length filtering (Trimmomatic)
+- Alignment: De novo sequence assembly (SPAdes) -> Align scaffolds to reference and condense aligned scaffolds into a consensus/draft genome (Medusa)
 - **Note:** On test data, de novo assembly produced a more complete assembly that better reproduced the corresponding published genome sequence than reference-based alignment. For the curious, reference-based alignment can be carried out as follows: Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools))
-
-
-- Variant calling: 
+- Variant calling: Align consensus to reference and export SNP list (MUMmer) 
 
 
 ## Software citations, versions and parameters

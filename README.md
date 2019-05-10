@@ -52,7 +52,8 @@ Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MI
 `All default settings`  
 
 **Samtools**  
-- deduplication: `3.consensus.sh` (`All default settings`)
+- `3.consensus.sh` (`All default settings`)
+- deduplication
 - consensus generation: vcfutils and consensuscall-c to create a consesus sequence (FASTQ) from bowtie-produced alignments, then convert to FASTA
 - variant calling: 
 

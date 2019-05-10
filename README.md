@@ -1,7 +1,7 @@
 # Viral VDAP
 ## Viral alignment, Variant Discovery and Annotation Pipeline
 
-## Team
+## Hackathon Team
 
 Elena Maria Cornejo Castro - team lead  
 Eneida Hatcher - writer  

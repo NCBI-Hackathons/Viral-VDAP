@@ -50,7 +50,7 @@ Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
 `scaffold.sh` (`All default settings`)
 Downstream steps use the largest scaffold produced from alignment.
 
-**Parsnp**
+**Parsnp** _documentation to come_
 
 
 For reference-based alignment (alternative):

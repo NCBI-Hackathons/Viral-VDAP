@@ -55,16 +55,13 @@ Downstream steps use the largest scaffold produced from alignment.
      Rapid Core-Genome Alignment and Visualization for Thousands of Microbial Genomes.
      bioRxiv (2014). doi: http://dx.doi.org/10.1101/007351
 
-Parameters: (`All default settings`)
-- it is possible to only change the number of threads, which we did not do for this pipeline.
+Parameters: `All default settings`
 
 **Snakemake v4.3.1**
 - Köster, Johannes and Rahmann, Sven. “Snakemake - A scalable bioinformatics workflow engine”. Bioinformatics 2012.
 
-Parameters: (`All default settings`)
+Parameters: `All default settings`
     
-
-TK TK TK
 
 For reference-based alignment (alternative):
 

@@ -24,18 +24,14 @@ We have constructed a pipeline using freely available tools for quality control,
 
 **What you’ll need:**
 - FASTQ files of your NGS sequencing results
-- FASTA files of reference sequence
--- Assuming you know the species you sampled,
--- Go to https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/find-data/virus and select “Search by Virus”
--- Begin typing the name of your virus. You can use taxonomic groups (e.g., Human gammaherpesvirus 4) or common names (e.g., Kaposi's sarcoma-associated herpesvirus, don’t worry, it’s an autofill, you don’t have to type the whole thing). 
--- On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.” Select the sequence you want, then download the FASTA file.
+- FASTA files of reference sequence. If you don't have your own reference genome, read on. Assuming you know the species you sampled, 1) Go to https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/find-data/virus and select “Search by Virus" 2) Begin typing the name of your virus. You can use taxonomic groups (e.g., Human gammaherpesvirus 4) or common names (e.g., Kaposi's sarcoma-associated herpesvirus, don’t worry, it’s an autofill, you don’t have to type the whole thing). 3) On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.” 4) Select the sequence you want, then download the FASTA file.
 
 # Overview of pipeline steps
 - QC: Quality filtering, trimming, and minimum length filtering (Trimmomatic)
 - Alignment: De novo sequence assembly (SPAdes) -> Align scaffolds to reference and condense aligned scaffolds into a consensus/draft genome (Medusa)
 - Variant calling: Align consensus to reference and export SNP list (MUMmer) 
 
-- **Note:** On test data, de novo assembly produced a more complete assembly that better reproduced the corresponding published genome sequence than reference-based alignment. For the curious, reference-based alignment can be carried out as follows: Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools))
+- **Note:** On test data, de novo assembly produced a more complete assembly that better reproduced the corresponding published genome sequence than reference-based alignment. For the curious, reference-based alignment can be carried out as follows (more details below): Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools))
 
 ## Software citations, versions and parameters
 **Trimmomatic v.0.39** 

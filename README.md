@@ -105,5 +105,10 @@ The Docker image contains <this software> as well as a webserver and FTP server 
 
 We tested sequences from three different KSHV cell lines with our pipeline. These data were derived by the Wellcome Sanger Institute and are available in the European Nucleotide Archive [JSC-1 (SAMEA1709534), BC-1 (SAMEA1709542), BCBL-1 (SAMEA1709549)]. The reference genome used was the KSHV GK18 strain complete genome sequence (Accession number: AF148805). The genome for GK18 is currently the most extensively annotated KSHV sequence available, including gene and coding sequence, repeat regions, mRNA and PolyA features (Rezaee et al., 2006).
 
+(https://github.com/NCBI-Hackathons/dsVirus-variant-discovery-and-annotation-pipeline/blob/master/images/JSC-1_Mauve.png)
+Progressive Mauve alignment of JSC-1 de novo sequence. 
+The newly derived JSC-1 sequence was aligned to GK18 (AF148805) and the JSC-1 genome deposited in RefSeq (GQ994937). GK18 annotations are represent as blocks, with gene regions in white and known repeat regions in red.
+As expected, the de novo assembly does not resolve the repeat regions.
+
 
 

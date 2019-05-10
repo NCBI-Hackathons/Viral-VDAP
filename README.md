@@ -49,6 +49,8 @@ Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
 **Medusa v1.6**  
 `scaffold.sh` (`All default settings`)
 
+**MUMmer v??**
+
 For reference-based alignment (alternative):
 
 _Bowtie2 v2.3.5.1_  

@@ -56,12 +56,12 @@ Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
 
 For reference-based alignment (alternative):
 
-**Bowtie2 v2.3.5.1**  
+_Bowtie2 v2.3.5.1_  
 - Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.
 
 `All default settings`  
 
-**Samtools**  
+_Samtools_  
 - `3.consensus.sh` (`All default settings`)
 - deduplication
 - consensus generation: vcfutils and consensuscall-c to create a consesus sequence (FASTQ) from bowtie-produced alignments, then convert to FASTA

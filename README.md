@@ -15,7 +15,7 @@ Whole-genome sequencing of pathogenic viruses has the potential to improve surve
 
 We have constructed a pipeline using freely available tools for quality control, alignment and SNP calling of double-stranded DNA virus paired-end short reads with the aim of providing researchers with interoperable consensus sequences and variant lists to be used for downstream analyses.    
 
-## Is this the right pipeline for you?
+# Is this the right pipeline for you?
 
 **Your virus**
 - Very low diversity virus populations, such as gammaherpesviruses. This tool is not suitable for viruses believed to exist as quasispecies (e.g., most RNA viruses), or for calling minority variants.
@@ -30,7 +30,7 @@ We have constructed a pipeline using freely available tools for quality control,
 -- Begin typing the name of your virus. You can use taxonomic groups (e.g., Human gammaherpesvirus 4) or common names (e.g., Kaposi's sarcoma-associated herpesvirus, don’t worry, it’s an autofill, you don’t have to type the whole thing). 
 -- On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.” Select the sequence you want, then download the FASTA file.
 
-## Overview of pipeline steps
+# Overview of pipeline steps
 - QC: Quality filtering, trimming, and minimum length filtering (Trimmomatic)
 - Alignment: De novo sequence assembly (SPAdes) -> Align scaffolds to reference and condense aligned scaffolds into a consensus/draft genome (Medusa)
 - Variant calling: Align consensus to reference and export SNP list (MUMmer) 
@@ -77,8 +77,6 @@ The Docker image contains <this software> as well as a webserver and FTP server 
 2. `docker run ncbihackathons/<this software>` Run the docker image from the master shell script
 3. Edit the configuration files as below
 
-# Testing
-
 ### DockerFile
 
 <this software> comes with a Dockerfile which can be used to build the Docker image.
@@ -87,3 +85,6 @@ The Docker image contains <this software> as well as a webserver and FTP server 
   2. `cd server`
   3. `docker build --rm -t <this software>/<this software> .`
   4. `docker run -t -i <this software>/<this software>`
+
+# Testing
+

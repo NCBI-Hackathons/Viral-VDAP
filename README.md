@@ -7,8 +7,7 @@ Elena Maria Cornejo Castro - team lead
 Eneida Hatcher - writer  
 Sara Jones  
 Sasha Mushegian - writer  
-Yunfan Fan - Sys Admin
-
+Yunfan Fan
 Rashmi Naidu
 
 # Introduction

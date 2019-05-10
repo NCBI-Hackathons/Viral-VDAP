@@ -33,8 +33,8 @@ We have constructed a pipeline using freely available tools for quality control,
 ## Overview of pipeline steps
 - Quality filtering, trimming, and minimum length filtering (Trimmomatic)
 - De novo sequence assembly (SPAdes) -> Align scaffolds to reference and condense aligned scaffolds into a consensus/draft genome (Medusa)
-
-- Alternative to de novo assembly: Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools)
+- (Alternative to de novo assembly: Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools))
+- Variant calling: 
 
 
 ## Software citations, versions and parameters
@@ -53,6 +53,7 @@ Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
 `All default settings`
 
 For reference-based alignment (alternative):
+
 **Bowtie2 v2.3.5.1**  
 - Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.
 

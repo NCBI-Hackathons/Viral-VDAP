@@ -32,12 +32,10 @@ We have constructed a pipeline using freely available tools for quality control,
 
 ## Overview of pipeline steps
 - Quality filtering, trimming, and minimum length filtering (Trimmomatic)
+- De novo sequence assembly (SPAdes) -> Align scaffolds to reference and condense aligned scaffolds into a consensus/draft genome (Medusa)
 
-Alignment: decision to be made between two different alignment approaches
-- Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools)
-- De novo sequence assembly (SPAdes) -> Align scaffolds to reference (nucmer) -> Condense aligned scaffolds into a consensus/draft genome (Medusa)
-- alignment of reference-based and de novo consensus sequences to reference (Mummer)
-- Quality of the consensus sequences will be compared with respect to small gaps and repetitive regions. One alignment approach will be chosen to include in pipeline.
+- Alternative to de novo assembly: Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools)
+
 
 ## Software citations, versions and parameters
 **Trimmomatic v.0.39** 
@@ -46,6 +44,15 @@ Alignment: decision to be made between two different alignment approaches
 Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
 - This line in the 1.trim.sh specifies that reads are to have a minimum average quality score of 30, low quality (<3) leading and trailing bases trimmed, and a minimum length after trimming of 50. All other settings as default. 
 
+**SPAdes v3.13.0**
+
+Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
+- The line listed in sbatch.sh specifies that SPAdes should run in assembly module only (--only-assembler) and applies --careful to try to reduce the number of mismatches and short indels. The k parameter refers to the k-mer sizes. We used a range of sizes from 21 to 77. The t parameter refers to the number of threads to run the software. 
+
+**Medusa v1.6**  
+`All default settings`
+
+For reference-based alignment (alternative):
 **Bowtie2 v2.3.5.1**  
 - Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.
 
@@ -55,15 +62,7 @@ Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MI
 - `3.consensus.sh` (`All default settings`)
 - deduplication
 - consensus generation: vcfutils and consensuscall-c to create a consesus sequence (FASTQ) from bowtie-produced alignments, then convert to FASTA
-- variant calling: 
 
-**SPAdes v3.13.0**
-
-Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
-- The line listed in sbatch.sh specifies that SPAdes should run in assembly module only (--only-assembler) and applies --careful to try to reduce the number of mismatches and short indels. The k parameter refers to the k-mer sizes. We used a range of sizes from 21 to 77. The t parameter refers to the number of threads to run the software. 
-
-**Medusa v1.6**  
-`All default settings`
 
 # How to use <this software>
 

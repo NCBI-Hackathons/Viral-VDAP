@@ -62,7 +62,14 @@ Parameters: `All default settings`
 - Köster, Johannes and Rahmann, Sven. “Snakemake - A scalable bioinformatics workflow engine”. Bioinformatics 2012.
 
 Parameters: `All default settings`
-    
+
+To check for errors in Snakefile or config.yaml:
+
+`snakemake -np --configfile config.yaml`
+
+To run snakemake:
+
+`snakemake --configfile config.yaml`
 
 For reference-based alignment (alternative):
 

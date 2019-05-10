@@ -49,7 +49,7 @@ Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
 **Medusa v1.6**  
 `scaffold.sh` (`All default settings`)
 
-**Parsnp
+**Parsnp**
 
 
 For reference-based alignment (alternative):

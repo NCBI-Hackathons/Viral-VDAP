@@ -8,7 +8,7 @@ Elena Maria Cornejo Castro - team lead
 Eneida Hatcher - writer  
 Sara Jones  
 Sasha Mushegian - writer  
-Yunfan Fan - sys admin   
+Yunfan Fan - sysadmin   
 Rashmi Naidu
 
 Allissa Dillman - hackathon organizer

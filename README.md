@@ -1,4 +1,5 @@
-# dsVirus-variant-discovery-and-annotation-pipeline
+# Viral VDAP
+## Viral alignment, Variant Discovery and Annotation Pipeline
 
 ## Team
 

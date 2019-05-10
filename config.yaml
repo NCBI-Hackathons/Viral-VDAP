@@ -1,0 +1,14 @@
+
+#forward read (fastq) 
+R1: "/home/ubuntu/data/reads/raw/jsc_r1.fastq.gz"
+#reverse read (fastq)
+R2: "/home/ubuntu/data/reads/raw/jsc_r2.fastq.gz"
+
+#sample prefix
+prefix: "jsc"
+
+#adapter file (fasta)
+adapters: "/home/ubuntu/data/ref/adapters.fa"
+
+#reference file (fasta)
+#ref:"~/data/ref/gk18.fasta"

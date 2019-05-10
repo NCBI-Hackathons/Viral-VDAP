@@ -52,9 +52,7 @@ Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
 **Medusa v1.6**  
 `All default settings`
 
-
-
-For reference-based alignment (alternative):
+[For reference-based alignment (alternative):]
 
 _Bowtie2 v2.3.5.1_  
 - Langmead B, Salzberg S. Fast gapped-read alignment with Bowtie 2. Nature Methods. 2012, 9:357-359.

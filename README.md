@@ -1,7 +1,8 @@
 # Viral VDAP
 ## Viral alignment, Variant Discovery and Annotation Pipeline
 
-## Team for the First Women-led Biodata Science Hackathon on the NIH campus, Bethesda, Maryland May 8-10
+## Hackathon Team 
+### Event: First Women-led Biodata Science Hackathon on the NIH campus, Bethesda, Maryland May 8-10
 
 Elena Maria Cornejo Castro - team lead  
 Eneida Hatcher - writer  

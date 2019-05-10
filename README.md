@@ -50,7 +50,19 @@ Parameters: `-k 21,33,55,77 -t 10 --only-assembler --careful`
 `scaffold.sh` (`All default settings`)
 Downstream steps use the largest scaffold produced from alignment.
 
-**Parsnp** _documentation to come_
+**Parsnp v1.2** 
+- Treangen TJ*, Ondov BD*, Koren S, Phillippy AM:
+     Rapid Core-Genome Alignment and Visualization for Thousands of Microbial Genomes.
+     bioRxiv (2014). doi: http://dx.doi.org/10.1101/007351
+
+Parameters: (`All default settings`)
+- it is possible to only change the number of threads, which we did not do for this pipeline.
+
+**Snakemake v4.3.1**
+- Köster, Johannes and Rahmann, Sven. “Snakemake - A scalable bioinformatics workflow engine”. Bioinformatics 2012.
+
+Parameters: (`All default settings`)
+    
 
 TK TK TK
 
@@ -64,7 +76,11 @@ _Bowtie2 v2.3.5.1_
 _Samtools_  
 - `3.consensus.sh` (`All default settings`)
 - deduplication
-- consensus generation: vcfutils and consensuscall-c to create a consesus sequence (FASTQ) from bowtie-produced alignments, then convert to FASTA
+- consensus generation: vcfutils and consensuscall-c to create a consesus sequence (FASTQ) from bowtie-produced alignments.
+
+_SeqTK_
+- (`All default settings`)
+- converting FASTQ consensus sequence to FASTA format
 
 
 # How to use <this software>

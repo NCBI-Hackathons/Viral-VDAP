@@ -29,7 +29,7 @@ We have constructed a pipeline using freely available tools for quality control,
 # Overview of pipeline steps
 - QC: Quality filtering, trimming, and minimum length filtering (Trimmomatic)
 - Assembly: De novo sequence assembly (SPAdes) -> Align scaffolds to reference and condense aligned scaffolds into a consensus/draft genome (Medusa)
-- Variant discovery: Compare assembly to reference genome to extract SNPs (Parsnp)
+- Variant discovery: Compare assembly to reference genome to extract SNPs (Parsnp) _[testing in progress]_
 
 - **Note:** On test data, de novo assembly produced a more complete assembly that better reproduced the corresponding published genome sequence than reference-based alignment. For the curious, reference-based alignment can be carried out as follows (more details below): Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools))
 

@@ -2,7 +2,7 @@
 ## Viral alignment, Variant Discovery and Annotation Pipeline
 
 ## Hackathon Team 
-### First Women-led Biodata Science Hackathon<br/>NIH campus, Bethesda, Maryland May 8-10
+### First Women-led Biodata Science Hackathon<br/>####NIH campus, Bethesda, Maryland May 8-10
 
 Elena Maria Cornejo Castro - team lead  
 Eneida Hatcher - writer  

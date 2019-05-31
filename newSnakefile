@@ -1,0 +1,17 @@
+##### Target rules #####
+
+rule all:
+    input:
+        "annotated/all.vcf.gz",
+        "qc/multiqc.html"
+
+##### Modules #####
+
+include: "rules/qc.smk"
+include: "rules/annotate.smk"
+include: "rules/denovo_assembly.smk"
+include: "rules/map_reads.smk"
+include: "rules/refine_assembly.smk"
+include: "rules/trim.smk"
+include: "rules/variant_calling.smk"
+

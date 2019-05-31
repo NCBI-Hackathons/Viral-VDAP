@@ -1,5 +1,0 @@
-Just testing that I can commit.
-
-Success! Joy.
-
-test from the ubuntu server

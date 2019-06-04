@@ -123,12 +123,17 @@ They are:
  * BC-1 - Accession number: SAMEA1709542
  * BCBL-1 - Accession number: SAMEA1709549 
  
-Here are the commands we used to download the FASTQ files for JSC-1 from European Nucleotide Archive in a Linux terminal:
+Here are the commands we used to download the FASTQ files for one of the samples, JSC-1, from European Nucleotide Archive in a Linux terminal:
 
  `wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244004/ERR244004_1.fastq.gz`     
  `wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244004/ERR244004_2.fastq.gz`     
  `wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244022/ERR244022_1.fastq.gz`     
  `wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244022/ERR244022_2.fastq.gz`  
+ 
+Since there are two runs for JSC-1, we merged the Read 1 files and Read 2 files. 
+
+`cat ERR244004_1.fastq.gz ERR244022_1.fastq.gz > jsc_1_r1.fastq.gz`  
+`cat ERR244004_2.fastq.gz ERR244022_2.fastq.gz > jsc_1_r2.fastq.gz`
  
 ## Reference genome
 

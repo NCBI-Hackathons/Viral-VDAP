@@ -139,6 +139,10 @@ Since there are two runs for JSC-1, we merged the Read 1 files and Read 2 files.
 
 The reference genome used was the KSHV GK18 strain complete genome sequence (Accession number: AF148805). The genome for GK18 is currently the most extensively annotated KSHV sequence available, including gene and coding sequence, repeat regions, mRNA and PolyA features (Rezaee et al., 2006).
 
+We provided a copy of the KSHV GK18 FASTA file in the *ref* folder. 
+
+## Results
+
 ![Progressive Mauve alignment of JSC-1 de novo sequence.](https://github.com/NCBI-Hackathons/dsVirus-variant-discovery-and-annotation-pipeline/blob/master/images/JSC-1_Mauve.png)
 Progressive Mauve alignment of JSC-1 de novo sequence.
 

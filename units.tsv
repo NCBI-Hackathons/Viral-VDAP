@@ -1,0 +1,8 @@
+sample	units	platform	fq1	fq2
+jsc_1	1	ILLUMINA	data/reads/ERR244004_1.fastq.gz	data/reads/ERR244004_2.fastq.gz
+jsc_1	2	ILLUMINA	data/reads/ERR244022_1.fastq.gz	data/reads/ERR244022_2.fastq.gz
+bc_1	1	ILLUMINA	data/reads/ERR244007_1.fastq.gz	data/reads/ERR244007_2.fastq.gz
+bc_1	2	ILLUMINA	data/reads/ERR244025_1.fastq.gz	data/reads/ERR244025_2.fastq.gz
+bcbl_1	1	ILLUMINA	data/reads/ERR244006_1.fastq.gz	data/reads/ERR244006_2.fastq.gz
+bcbl_1	2	ILLUMINA	data/reads/ERR244024_1.fastq.gz	data/reads/ERR244024_2.fastq.gz
+				

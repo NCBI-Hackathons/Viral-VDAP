@@ -37,6 +37,28 @@ We have constructed a pipeline using freely available tools for quality control,
 
 - **Note:** On test data, de novo assembly produced a more complete assembly that better reproduced the corresponding published genome sequence than reference-based alignment. For the curious, reference-based alignment can be carried out as follows (more details below): Alignment to reference sequence (Bowtie2)-> Sequence deduplication (Samtools) -> calling variants and making consensus sequence (Samtools))
 
+## Pipeline
+
+### Trimming and Filtering Reads
+
+Using Trimmomatic, we kept reads that have a minimum average quality score of 30 and a minimum length of at least 50. Reads were trimmed at either end if the bases were below a threshold quality (<3) or contained any adapter sequences. All other parameters were kept as default.
+
+`java -jar /path/of/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 8 -phred33 \
+jsc_1_r2.fastq.gz jsc_1_r2.fq.gz \
+jsc_1_forward_paired.fq.gz jsc_1_forward_unpaired.fq.gz \
+jsc_1_reverse_paired.fq.gz jsc_1_reverse_unpaired.fq.gz \
+ILLUMINACLIP:{input.adapters}:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
+
+Parameters:
+ * ILLUMINACLIP: Cut adapter and other illumina-specific sequences from the read.
+ * LEADING: Cut bases off the start of a read, if below a threshold quality.
+ * TRAILING: Cut bases off the end of a read, if below a threshold quality.
+ * MINLEN: Drop the read if it is below a specified length.
+ * AVGQUAL: Drop the read if the average quality is below the specified level.
+ * PE: Paired end mode.
+ * phred33: specifies the base quality encoding.
+ * threads: indicates the number of threads to use.
+
 ## Software citations, versions and parameters
 **Trimmomatic v.0.39** 
 - Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
@@ -132,8 +154,8 @@ Here are the commands we used to download the FASTQ files for one of the samples
  
 Since there are two runs for JSC-1, we merged the Read 1 files and Read 2 files. 
 
-`cat ERR244004_1.fastq.gz ERR244022_1.fastq.gz > jsc_1_r1.fastq.gz`  
-`cat ERR244004_2.fastq.gz ERR244022_2.fastq.gz > jsc_1_r2.fastq.gz`
+`cat ERR244004_1.fastq.gz ERR244022_1.fastq.gz > jsc_1_r1.fq.gz`  
+`cat ERR244004_2.fastq.gz ERR244022_2.fastq.gz > jsc_1_r2.fq.gz`
  
 ## Reference genome
 

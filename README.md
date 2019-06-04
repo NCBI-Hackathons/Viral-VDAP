@@ -19,8 +19,8 @@ We have constructed a pipeline using freely available tools for quality control,
 - FASTA file of your reference genome. 
 - FASTA file of your adapter sequences.
 
-If you don't have your own reference genome, follow these steps:  
-1) Go to https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/find-data/virus and select “Search by Virus"   
+**If you don't have your own reference genome, follow these steps:**  
+1) Go to https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/find-data/virus and select “Search by Virus".  
 2) Begin typing the name of your virus. You can use taxonomic groups (e.g., Human gammaherpesvirus...) or common names (e.g., Kaposi's sarcoma-associated herpesvirus... don’t worry, it’s an autofill, you don’t have to type the whole thing).   
 3) On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.”   
 4) Select the sequence you want, then download the FASTA file.

@@ -39,15 +39,17 @@ We have constructed a pipeline using freely available tools for quality control,
 
 ## Pipeline
 
-### Trimming and Filtering Reads
+### Trimming and filtering reads
 
 Using Trimmomatic, we kept reads that have a minimum average quality score of 30 and a minimum length of at least 50. Reads were trimmed at either end if the bases were below a threshold quality (<3) or contained any adapter sequences. All other parameters were kept as default.
 
-`java -jar /path/of/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 8 -phred33  
- jsc_1_r2.fastq.gz jsc_1_r2.fq.gz  
- jsc_1_forward_paired.fq.gz jsc_1_forward_unpaired.fq.gz  
- jsc_1_reverse_paired.fq.gz jsc_1_reverse_unpaired.fq.gz  
- ILLUMINACLIP:{input.adapters}:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
+`
+java -jar /path/of/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 8 -phred33  
+jsc_1_r2.fastq.gz jsc_1_r2.fq.gz  
+jsc_1_forward_paired.fq.gz jsc_1_forward_unpaired.fq.gz  
+jsc_1_reverse_paired.fq.gz jsc_1_reverse_unpaired.fq.gz  
+ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50
+`
 
 Parameters:
  * ILLUMINACLIP: Cut adapter and other illumina-specific sequences from the read.
@@ -58,6 +60,12 @@ Parameters:
  * PE: Paired end mode.
  * phred33: specifies the base quality encoding.
  * threads: indicates the number of threads to use.
+ 
+After this step, we get 4 output files. However, we are only interested in the 2 'paired' output files where both reads survived the processing.
+ 
+### De novo assembly with SPAdes
+
+
 
 ## Software citations, versions and parameters
 **Trimmomatic v.0.39** 

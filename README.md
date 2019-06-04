@@ -45,7 +45,7 @@ Using Trimmomatic, we kept reads that have a minimum average quality score of 30
 
 `
 java -jar /path/of/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 8 -phred33  
-jsc_1_r2.fastq.gz jsc_1_r2.fq.gz  
+jsc_1_r1.fq.gz jsc_1_r2.fq.gz  
 jsc_1_forward_paired.fq.gz jsc_1_forward_unpaired.fq.gz  
 jsc_1_reverse_paired.fq.gz jsc_1_reverse_unpaired.fq.gz  
 ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50

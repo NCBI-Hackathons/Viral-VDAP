@@ -20,9 +20,9 @@ We have constructed a pipeline using freely available tools for quality control,
 - FASTA file of your adapter sequences.
 
 **If you don't have your own reference genome, follow these steps:**  
-1) Go to https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/find-data/virus and select “Search by Virus".  
+1) Go to https://www.ncbi.nlm.nih.gov/labs/virus/vssi/#/find-data/virus and select "Search by Virus".  
 2) Begin typing the name of your virus. You can use taxonomic groups (e.g., Human gammaherpesvirus...) or common names (e.g., Kaposi's sarcoma-associated herpesvirus... don’t worry, it’s an autofill, you don’t have to type the whole thing).   
-3) On the filter panel on the left, click “Nucleotide Sequence Type,” then check “RefSeq.”   
+3) On the filter panel on the left, click "Nucleotide Sequence Type", then check "RefSeq".   
 4) Select the sequence you want, then download the FASTA file.
 
 # Overview of pipeline steps
@@ -58,7 +58,7 @@ Parameters:
  * -phred33: specifies the base quality encoding.
  * -threads: indicates the number of threads to use.
  
-After this step, we get 4 output files. However, we are only interested in the 2 'paired' output files where both forward and reverse reads survived the processing.
+After this step, we get 4 output files. However, we are only interested in the 2 "paired" output files where both forward and reverse reads survived the processing.
  
 ### De novo assembly with SPAdes
 
@@ -88,9 +88,6 @@ After this step, we get 4 output files. However, we are only interested in the 2
 # Software 
 **Trimmomatic v.0.39** 
 - Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
-
-Parameters: `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
-- This line in `1.trim.sh` specifies that reads are to have a minimum average quality score of 30, low quality (<3) leading and trailing bases trimmed, and a minimum length after trimming of 50. All other settings as default. 
 
 **SPAdes v3.13.0**
 -  Bankevich A., Nurk S., Antipov D., Gurevich A., Dvorkin M., Kulikov A. S., Lesin V., Nikolenko S., Pham S., Prjibelski A., Pyshkin A., Sirotkin A., Vyahhi N., Tesler G., Alekseyev M. A., Pevzner P. A. SPAdes: A New Genome Assembly Algorithm and Its Applications to Single-Cell Sequencing.    Journal of Computational Biology, 2012
@@ -198,6 +195,8 @@ The newly derived JSC-1 sequence was aligned to GK18 (AF148805) and the JSC-1 ge
 As expected, the de novo assembly does not resolve the repeat regions.
 
 # Future Considerations
+
+use another assembler and integrate different assemblies?
 
 # Hackathon Team 
 ### First Women-led Biodata Science Hackathon <br> NIH campus, Bethesda, Maryland May 8-10, 2019

@@ -85,7 +85,7 @@ After this step, we get 4 output files. However, we are only interested in the 2
 
 
 
-## Software citations, versions and parameters
+# Software 
 **Trimmomatic v.0.39** 
 - Bolger, A. M., Lohse, M., & Usadel, B. (2014). Trimmomatic: A flexible trimmer for Illumina Sequence Data. Bioinformatics, btu170
 
@@ -197,8 +197,9 @@ Progressive Mauve alignment of JSC-1 de novo sequence.
 The newly derived JSC-1 sequence was aligned to GK18 (AF148805) and the JSC-1 genome deposited in RefSeq (GQ994937). GK18 annotations are represent as blocks, with gene regions in white and known repeat regions in red.
 As expected, the de novo assembly does not resolve the repeat regions.
 
+# Future Considerations
 
-## Hackathon Team 
+# Hackathon Team 
 ### First Women-led Biodata Science Hackathon <br> NIH campus, Bethesda, Maryland May 8-10, 2019
 
 Elena Maria Cornejo Castro - team lead  

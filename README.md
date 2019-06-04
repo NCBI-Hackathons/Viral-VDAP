@@ -114,7 +114,25 @@ The Docker image contains <this software> as well as a webserver and FTP server 
 
 # Testing
 
-We tested sequences from three different KSHV cell lines with our pipeline. These data were derived by the Wellcome Sanger Institute and are available in the European Nucleotide Archive [JSC-1 (SAMEA1709534), BC-1 (SAMEA1709542), BCBL-1 (SAMEA1709549)]. The reference genome used was the KSHV GK18 strain complete genome sequence (Accession number: AF148805). The genome for GK18 is currently the most extensively annotated KSHV sequence available, including gene and coding sequence, repeat regions, mRNA and PolyA features (Rezaee et al., 2006).
+## Test Data
+
+We tested sequences from three different KSHV cell lines with our pipeline. These sequences were derived from the Wellcome Sanger Institute and are available in the European Nucleotide Archive. 
+
+They are:  
+ * JSC-1 - Accession number: SAMEA1709534
+ * BC-1 - Accession number: SAMEA1709542
+ * BCBL-1 - Accession number: SAMEA1709549 
+ 
+Here are the commands we used to download the FASTQ files for JSC-1 from European Nucleotide Archive in a Linux terminal:
+
+ `wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244004/ERR244004_1.fastq.gz
+ wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244004/ERR244004_2.fastq.gz
+ wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244022/ERR244022_1.fastq.gz
+ wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244022/ERR244022_2.fastq.gz`
+ 
+## Reference genome
+
+The reference genome used was the KSHV GK18 strain complete genome sequence (Accession number: AF148805). The genome for GK18 is currently the most extensively annotated KSHV sequence available, including gene and coding sequence, repeat regions, mRNA and PolyA features (Rezaee et al., 2006).
 
 ![Progressive Mauve alignment of JSC-1 de novo sequence.](https://github.com/NCBI-Hackathons/dsVirus-variant-discovery-and-annotation-pipeline/blob/master/images/JSC-1_Mauve.png)
 Progressive Mauve alignment of JSC-1 de novo sequence.

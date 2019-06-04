@@ -60,12 +60,33 @@ Parameters:
  * MINLEN: Drop the read if it is below a specified length.
  * AVGQUAL: Drop the read if the average quality is below the specified level.
  * PE: Paired end mode.
- * phred33: specifies the base quality encoding.
- * threads: indicates the number of threads to use.
+ * -phred33: specifies the base quality encoding.
+ * -threads: indicates the number of threads to use.
  
-After this step, we get 4 output files. However, we are only interested in the 2 'paired' output files where both reads survived the processing.
+After this step, we get 4 output files. However, we are only interested in the 2 'paired' output files where both forward and reverse reads survived the processing.
  
 ### De novo assembly with SPAdes
+
+-o <output_dir> 
+    Specify the output directory. Required option.
+--careful
+    Tries to reduce the number of mismatches and short indels. Also runs MismatchCorrector – a post processing tool, which uses BWA tool (comes with SPAdes). This option is recommended only for assembly of small genomes. We strongly recommend not to use it for large and medium-size eukaryotic genomes. Note, that this options is is not supported by metaSPAdes and rnaSPAdes.
+    -1 <file_name> 
+    File with forward reads.
+
+-2 <file_name> 
+    File with reverse reads.
+    -t <int> (or --threads <int>)
+    Number of threads. The default value is 16.
+
+-m <int> (or --memory <int>)
+    Set memory limit in Gb. SPAdes terminates if it reaches this limit. The default value is 250 Gb. Actual amount of consumed RAM will be below this limit. Make sure this value is correct for the given machine. SPAdes uses the limit value to automatically determine the sizes of various buffers, etc.
+
+--tmp-dir <dir_name>
+    Set directory for temporary files from read error correction. The default value is <output_dir>/corrected/tmp
+
+-k <int,int,...>
+    Comma-separated list of k-mer sizes to be used (all values must be odd, less than 128 and listed in ascending order).
 
 
 

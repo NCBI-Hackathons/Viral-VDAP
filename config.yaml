@@ -8,7 +8,7 @@ ref:
   # path to GTF annotation file 
   annotation: data/ref/gk18.gtf  
   
-# path to adapter file
+# path to adapter sequences file
 adapters: data/ref/adapters.fa
 
 
@@ -18,9 +18,11 @@ params:
   trimmomatic:
     pe:
       trimmer:
-        # See trimmomatic manual for adding additional options, e.g. for adapter trimming.
         - "LEADING:3"
         - "TRAILING:3"
-        - "SLIDINGWINDOW:4:15"
-        - "MINLEN:36"
-
+        - "MINLEN:50"
+        - "AVGQUAL:30"
+        - "-phred33"
+        - "-threads:8"
+        
+      

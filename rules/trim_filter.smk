@@ -10,9 +10,9 @@ rule trim_and_filter_reads:
         temp("trimmed/{sample}_reverse_paired.fq.gz"),
         temp("trimmed/{sample}_reverse_unpaired.fq.gz")
     params:
-        config["params"]["trimmomatic"]["options"]
+        trim = " ".join(config["params"]["trimmomatic"]["options"])
     log:
         "logs/trimmomatic/{sample}-{unit}.log"
     threads: config["params"]["trimmomatic"]["threads"] 
     shell:
-        "java -jar /path/of/Trimmomatic-0.39/trimmomatic-0.39.jar PE -t {threads} {input} {output} 2> {log}"
+        "java -jar /path/of/Trimmomatic-0.39/trimmomatic-0.39.jar PE -t {threads} {input} {output} {params.trim} 2> {log}"

@@ -16,13 +16,15 @@ params:
   picard:
     MarkDuplicates: "REMOVE_DUPLICATES=true"
   trimmomatic:
-    pe:
-      trimmer:
-        - "LEADING:3"
-        - "TRAILING:3"
-        - "MINLEN:50"
-        - "AVGQUAL:30"
-        - "-phred33"
-        - "-threads:8"
+    options:
+      - "LEADING:3"
+      - "TRAILING:3"
+      - "MINLEN:50"
+      - "AVGQUAL:30"
+      - "-phred33"
+    threads: 8
+      
+      
+   
         
       

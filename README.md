@@ -41,10 +41,10 @@ Using Trimmomatic, we kept reads that have a minimum average quality score of 30
 The input for this step are paired-end FASTQ files (example: jsc_1_r1.fq.gz and jsc_1_r2.fq.gz) and a FASTA file of adapter sequences (example: adapters.fa). 
 
 
-`java -jar /path/of/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 8 -phred33 \`    
-`jsc_1_r1.fq.gz jsc_1_r2.fq.gz \`  
-`trimmed/jsc_1_forward_paired.fq.gz trimmed/jsc_1_forward_unpaired.fq.gz \`    
-`trimmed/jsc_1_reverse_paired.fq.gz trimmed/jsc_1_reverse_unpaired.fq.gz \`   
+`java -jar /path/of/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 8 -phred33 `    
+`jsc_1_r1.fq.gz jsc_1_r2.fq.gz `  
+`trimmed/jsc_1_forward_paired.fq.gz trimmed/jsc_1_forward_unpaired.fq.gz `    
+`trimmed/jsc_1_reverse_paired.fq.gz trimmed/jsc_1_reverse_unpaired.fq.gz `   
 `ILLUMINACLIP:adapters.fa:2:30:10 LEADING:3 TRAILING:3 AVGQUAL:30 MINLEN:50`
 
 
@@ -73,18 +73,16 @@ The SPAdes pipeline itself contains several modules:
  
 When running the following command, SPAdes will perform read correction, genome assembly, and MismatchCorrector on the 2 "paired" FASTQ files from the previous step. 
 
-`spades.py --careful -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz \`  
-`-o assemblies/jsc_1`
+`spades.py --careful -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz -o assemblies/jsc_1`
 
 If you have paired-end IonTorrent data, --iontorrent will be added to the command like so:
 
-`spades.py --careful --iontorrent -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz \`  
-`-o assemblies/jsc_1`
+`spades.py --careful --iontorrent -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz -o assemblies/jsc_1`
 
 If you want to specify your own k-mer sizes or number of threads in the config.yaml file, they will be added to the command and will look like the following: 
 
-`spades.py -k 21,33,55 -t 20 --careful -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz \`   
-`-o assemblies/jsc_1`
+`spades.py -k 21,33,55 -t 20 --careful -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz   
+-o assemblies/jsc_1`
  
 Parameters:
 * -o: specifies the output directory and is required.

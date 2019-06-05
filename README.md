@@ -58,7 +58,7 @@ Parameters:
  * -phred33: specifies the base quality encoding.
  * -threads: indicates the number of threads to use.
  
-After this step, we get 4 output files. However, we are only interested in the 2 "paired" output files where both forward and reverse reads survived the processing.
+After this step, we get 4 output files. However, we are only interested in the 2 "paired" output files where both forward and reverse reads passed the processing.
  
 ### De novo assembly with SPAdes
 

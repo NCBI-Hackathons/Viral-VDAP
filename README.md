@@ -77,7 +77,7 @@ When running the following command, SPAdes will perform read correction, genome 
 
 If you have paired-end IonTorrent data, --iontorrent will be added to the command like so:
 
-`spades.py --careful --iontorrent -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz -o assemblies/jsc_1`
+`spades.py --careful --iontorrent -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz                -o assemblies/jsc_1`
 
 If you want to specify your own k-mer sizes or number of threads in the config.yaml file, they will be added to the command and will look like the following: 
 

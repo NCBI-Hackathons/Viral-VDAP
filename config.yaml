@@ -1,14 +1,26 @@
+samples: samples.tsv
+units: units.tsv
 
-#forward read (fastq) 
-R1: "/home/ubuntu/data/reads/raw/jsc_r1.fastq.gz"
-#reverse read (fastq)
-R2: "/home/ubuntu/data/reads/raw/jsc_r2.fastq.gz"
+ref:
+  name: GK18
+  # path to the reference genome
+  genome: data/ref/gk18.fa
+  # path to GTF annotation file 
+  annotation: data/ref/gk18.gtf  
+  
+# path to adapter file
+adapters: data/ref/adapters.fa
 
-#sample prefix
-prefix: "jsc"
 
-#adapter file (fasta)
-adapters: "/home/ubuntu/data/ref/adapters.fa"
+params:
+  picard:
+    MarkDuplicates: "REMOVE_DUPLICATES=true"
+  trimmomatic:
+    pe:
+      trimmer:
+        # See trimmomatic manual for adding additional options, e.g. for adapter trimming.
+        - "LEADING:3"
+        - "TRAILING:3"
+        - "SLIDINGWINDOW:4:15"
+        - "MINLEN:36"
 
-#reference file (fasta)
-#ref:"~/data/ref/gk18.fasta"

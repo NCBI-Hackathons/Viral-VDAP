@@ -1,24 +1,34 @@
 rule merge_forward_reads:
     """
-    Merge forward reads of the same sample from different runs.
+    Merge forward reads of the same sample from different runs if more than one.
+    Rename FASTQ files with sample name.
+    Compress files if not already compressed. 
     """
     input:
-        unpack(get_fastq)
+        unpack(get_forward_fastqs)
     output:
         "reads/{sample}_r1.fq.gz"
-    shell:
-        "cat {input} > {output}"
+    run:
+        if len(input) > 1:
+            shell("cat {input} | gzip > {output}")
+        else:
+            shell("mv {input} {output}")
                
 rule merge_reverse_reads:
     """
-    Merge reverse reads of the same sample from different runs.
+    Merge reverse reads of the same sample from different runs if more than one.
+    Rename FASTQ files with sample name.
+    Compress files if not already compressed. 
     """
     input:
-        unpack(get_fastq)
+        unpack(get_reverse_fastqs)
     output:
         "reads/{sample}_r2.fq.gz"
-    shell:
-        "cat {input} > {output}"   
+    run:
+        if len(input) > 1:
+            shell("cat {input} | gzip > {output}")
+        else:
+            shell("mv {input} {output}")
 
 rule trim_and_filter_reads:
     """

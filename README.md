@@ -49,12 +49,12 @@ The input for this step are paired-end FASTQ files (example: jsc_1_r1.fq.gz and 
 
 
 Parameters:
- * ILLUMINACLIP: Cut adapter and other illumina-specific sequences from the read.
- * LEADING: Cut bases off the start of a read, if below a threshold quality.
- * TRAILING: Cut bases off the end of a read, if below a threshold quality.
- * MINLEN: Drop the read if it is below a specified length.
- * AVGQUAL: Drop the read if the average quality is below the specified level.
- * PE: Paired end mode.
+ * ILLUMINACLIP: cut adapter and other illumina-specific sequences from the read.
+ * LEADING: cut bases off the start of a read, if below a threshold quality.
+ * TRAILING: cut bases off the end of a read, if below a threshold quality.
+ * MINLEN: drop the read if it is below a specified length.
+ * AVGQUAL: drop the read if the average quality is below the specified level.
+ * PE: paired end mode.
  * -phred33: specifies the base quality encoding.
  * -threads: indicates the number of threads to use.
  
@@ -62,27 +62,38 @@ After this step, we get 4 output files. However, we are only interested in the 2
  
 ### De novo assembly with SPAdes
 
--o <output_dir> 
-    Specify the output directory. Required option.
---careful
-    Tries to reduce the number of mismatches and short indels. Also runs MismatchCorrector – a post processing tool, which uses BWA tool (comes with SPAdes). This option is recommended only for assembly of small genomes. We strongly recommend not to use it for large and medium-size eukaryotic genomes. Note, that this options is is not supported by metaSPAdes and rnaSPAdes.
-    -1 <file_name> 
-    File with forward reads.
+We chose SPAdes as our de novo assembler because it can work with Illumina and IonTorrent reads. In addition, SPAdes is capable of providing hybrid assemblies using PacBio, Oxford, Nanopore, and Sanger reads. 
 
--2 <file_name> 
-    File with reverse reads.
-    -t <int> (or --threads <int>)
-    Number of threads. The default value is 16.
+The SPAdes pipeline itself contains several modules:
 
--m <int> (or --memory <int>)
-    Set memory limit in Gb. SPAdes terminates if it reaches this limit. The default value is 250 Gb. Actual amount of consumed RAM will be below this limit. Make sure this value is correct for the given machine. SPAdes uses the limit value to automatically determine the sizes of various buffers, etc.
+ * BayesHammer - read error correction tool for Illumina reads.
+ * IonHammer - read error correction tool for IonTorrent reads.
+ * SPAdes - iterative short-read genome assembly.
+ * MismatchCorrector - tool improves mismatch and short indel rates in resulting contigs and scaffold; uses BWA.
+ 
+When running the following command, SPAdes will perform read correction, genome assembly, and MismatchCorrector on the 2 "paired" FASTQ files from the previous step. 
 
---tmp-dir <dir_name>
-    Set directory for temporary files from read error correction. The default value is <output_dir>/corrected/tmp
+`spades.py --careful -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz \`
+`-o assemblies/jsc_1`
 
--k <int,int,...>
-    Comma-separated list of k-mer sizes to be used (all values must be odd, less than 128 and listed in ascending order).
+If you have paired-end IonTorrent data, --iontorrent will be added to the command like so:
 
+`spades.py --careful --iontorrent -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz \`
+`-o assemblies/jsc_1`
+
+If you want to specify your own k-mer sizes or number of threads in the config.yaml file, they will be added to the command and will look like the following: 
+
+`spades.py -k 21,33,55,77 -t 20 --careful -1 trimmed/jsc_1_forward_paired.fq.gz -2 trimmed/jsc_1_reverse_paired.fq.gz \`
+`-o assemblies/jsc_1`
+ 
+Parameters:
+* -o: specifies the output directory and is required.
+* --careful: runs MismatchCorrector; option is recommended only for assembly of small genomes (i.e. KSHV).
+* -1: file with forward reads.
+* -2: file with reverse reads.
+* -t (or --threads): indicates the number of threads to use; default is 16. 
+* -k: comma-separated list of k-mer sizes to be used (all values must be odd, less than 128 and listed in ascending order).
+* --iontorrent: flag for assembling IonTorrent data.
 
 
 # Software 

@@ -63,7 +63,7 @@ After this step, we get 4 output files. However, we are only interested in the 2
  
 ### De novo assembly with SPAdes
 
-We chose SPAdes as our de novo assembler because it can work with Illumina and IonTorrent reads. In addition, SPAdes is capable of providing hybrid assemblies using PacBio, Oxford, Nanopore, and Sanger reads. 
+We chose SPAdes as our de novo assembler because it can work with Illumina and Ion Torrent reads. In addition, SPAdes is capable of providing hybrid assemblies using PacBio, Oxford, Nanopore, and Sanger reads. Currently, our pipeline only takes in Illumina and Ion Torrent reads.
 
 The SPAdes pipeline itself contains several modules:
 
@@ -97,6 +97,18 @@ Parameters:
 * -k: comma-separated list of k-mer sizes to be used (all values must be odd, less than 128 and listed in ascending order).
 * --iontorrent: flag for assembling IonTorrent data.
 
+### Refine Assembly with Medusa
+
+We selected Medusa to refine our draft genome assembly with our reference genome, GK18. Medusa can use multiple reference genomes to determine the correct order and orientation of the contigs in a graph-based approach.
+
+`
+java -jar ./medusa.ar -f ref/gk18.fa -i -v
+`
+Parameters:
+* -i: indicates the name of the target genome file and is required.
+* -o: indicates the name of the output FASTA file.
+* -v: print on console how MUMmer, a package used by Medusa, is running.
+* -f: indicates the path to the comparison drafts folder ~ reference genome in FASTA format
 
 # Software 
 **Trimmomatic v.0.39** 

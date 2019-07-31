@@ -102,8 +102,9 @@ Parameters:
 We selected Medusa to refine our draft genome assembly with our reference genome, GK18. Medusa can use multiple reference genomes to determine the correct order and orientation of the contigs in a graph-based approach.
 
 `
-java -jar ./medusa.ar -f ref/gk18.fa -i -v
+java -jar ./medusa.ar -f ref/gk18.fa -i assemblies/jsc_1/scaffolds.fasta -o final_scaffolds/jsc_1_scaffold.fasta -v
 `
+
 Parameters:
 * -i: indicates the name of the target genome file and is required.
 * -o: indicates the name of the output FASTA file.

@@ -4,12 +4,9 @@ rule samtools_index:
         "data/dedup_reads/{sample}_dedup.bam"
     output:
         "data/dedup_reads/{sample}_dedup.bam.bai"
-    params:
-        file = "{sample}_dedup.bam.bai",
-        dir = "data/dedup_reads"
     message: "Indexing BAM file with SAMtools."
     shell:
-        "samtools index {input} && mv {params.file} {params.dir}"
+        "samtools index {input}"
 
 
 rule bcftools_call:

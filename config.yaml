@@ -1,32 +1,26 @@
 samples: samples.tsv
-units: units.tsv
+
+# TODO Add directory to store data
 
 ref:
   name: GK18
+  # name of directory with reference files
+  dir: ref/
   # path to the reference genome
-  genome: data/ref/gk18.fa
+  genome: ref/gk18.fa
   # path to GTF annotation file 
-  annotation: data/ref/gk18.gtf  
+  annotation: ref/gk18.gtf  
   
 # path to adapter sequences file
-adapters: data/ref/adapters.fa
+adapters: adapters.fa
+       
+# number of threads to use
+threads: 8
 
-
-params:
-  picard:
-    MarkDuplicates: "REMOVE_DUPLICATES=true"
-  trimmomatic:
-    options:
-      - "LEADING:3"
-      - "TRAILING:3"
-      - "MINLEN:50"
-      - "AVGQUAL:30"
-      - "-phred33"
-    clip:
-      - "ILLUMINACLIP:{}:2:30:10" 
-    threads: 8
-      
-      
-   
-        
-      
+spades:
+  # enter either illumina or iontorrent for sequencer platform
+  platform: illumina
+  # k-mer sizes must be odd, less than 128, and listed in ascending order 
+  #kmer_sizes: 21,33,55 
+  kmer_sizes: 
+ 

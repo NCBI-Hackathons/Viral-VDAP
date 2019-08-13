@@ -1,4 +1,4 @@
-sample   
-jsc_1 
-bc_1  
-bcbl_1    
+sample	platform	fq1	fq2
+jsc_1	ILLUMINA	data/reads/jsc_1_r1.fq.gz	data/reads/jsc_1_r2.fq.gz
+bc_1	ILLUMINA	data/reads/bc_1_r1.fq.gz	data/reads/bc_1_r2.fq.gz
+bcbl_1	ILLUMINA	data/reads/bcbl_1_r1.fq.gz	data/reads/bcbl_1_r2.fq.gz

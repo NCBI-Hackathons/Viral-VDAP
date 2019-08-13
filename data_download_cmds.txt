@@ -1,0 +1,34 @@
+#jsc_1
+
+wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244004/ERR244004_1.fastq.gz
+wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244004/ERR244004_2.fastq.gz
+wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244022/ERR244022_1.fastq.gz
+wget ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244022/ERR244022_2.fastq.gz
+
+cat ERR244004_1.fastq.gz ERR244022_1.fastq.gz > jsc_1_r1.fq.gz
+cat ERR244004_2.fastq.gz ERR244022_2.fastq.gz > jsc_1_r2.fq.gz
+
+#bc1
+
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244007/ERR244007_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244007/ERR244007_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244025/ERR244025_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244025/ERR244025_2.fastq.gz
+
+cat ERR244007_1.fastq.gz ERR244025_1.fastq.gz > bc_1_r1.fq.gz
+cat ERR244007_2.fastq.gz ERR244025_2.fastq.gz > bc_1_r2.fq.gz
+
+#bcbl
+
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244006/ERR244006_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244006/ERR244006_2.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244024/ERR244024_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR244/ERR244024/ERR244024_2.fastq.gz
+
+cat ERR244006_1.fastq.gz ERR244024_1.fastq.gz > bcbl_1_r1.fq.gz
+cat ERR244006_2.fastq.gz ERR244024_2.fastq.gz > bcbl_1_r2.fq.gz
+
+
+
+
+

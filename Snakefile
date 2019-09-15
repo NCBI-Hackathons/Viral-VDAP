@@ -1,9 +1,11 @@
+include: "rules/common.smk"
+
 ##### Target rules #####
-'''
 rule all:
     input:
-        "annotated/all.vcf.gz"
-'''
+        expand("data/vcf/{sample}/{sample}.vcf", sample=samples["sample"])
+
+
 ##### Modules #####
 
 include: "rules/trim.smk"

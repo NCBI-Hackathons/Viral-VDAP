@@ -1,0 +1,327 @@
+##gff-version 3
+##sequence-region NC_009333.1 1 137969
+##species https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=37296
+NC_009333.1	RefSeq	region	1	137969	.	+	.	ID=NC_009333.1:1..137969;Dbxref=taxon:37296;acronym=KSHV;common=Kaposi's sarcoma-associated herpesvirus;country=Greece;gb-synonym=Kaposi's sarcoma-associated herpesvirus;gbkey=Src;genome=genomic;isolation-source=classic Kaposi's sarcoma;mol_type=genomic DNA;nat-host=Homo sapiens;note=cloned from tissue as overlapping cosmids%3B no cell line contains this virus strain;old-name=Human herpesvirus 8;strain=GK18;type=P
+NC_009333.1	RefSeq	sequence_feature	1	137168	.	+	.	ID=id-NC_009333.1:1..137168;Note=unique (U) region%3B flanked by variable numbers of terminal repeat (TR) in genomic DNA;gbkey=misc_feature
+NC_009333.1	RefSeq	sequence_feature	1	7439	.	+	.	ID=id-NC_009333.1:1..7439;Note=insert in cos86%3B contains copies of TR at left end;gbkey=misc_feature
+NC_009333.1	RefSeq	gene	4	1083	.	+	.	ID=gene-HHV8GK18_gp01;Dbxref=GeneID:4961511;Name=K1;gbkey=Gene;gene=K1;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp01
+NC_009333.1	RefSeq	mRNA	29	1083	.	+	.	ID=rna-HHV8GK18_gp01;Parent=gene-HHV8GK18_gp01;Dbxref=GeneID:4961511;gbkey=mRNA;gene=K1;locus_tag=HHV8GK18_gp01
+NC_009333.1	RefSeq	exon	29	1083	.	+	.	ID=exon-HHV8GK18_gp01-1;Parent=rna-HHV8GK18_gp01;Dbxref=GeneID:4961511;gbkey=mRNA;gene=K1;locus_tag=HHV8GK18_gp01
+NC_009333.1	RefSeq	CDS	105	944	.	+	0	ID=cds-YP_001129350.1;Parent=rna-HHV8GK18_gp01;Dbxref=Genbank:YP_001129350.1,GeneID:4961511;Name=YP_001129350.1;Note=contains an Ig domain;gbkey=CDS;gene=K1;locus_tag=HHV8GK18_gp01;product=K1;protein_id=YP_001129350.1
+NC_009333.1	RefSeq	polyA_site	1083	1083	.	+	.	ID=id-HHV8GK18_gp01;Dbxref=GeneID:4961511;gbkey=polyA_site;gene=K1;locus_tag=HHV8GK18_gp01
+NC_009333.1	RefSeq	TATA_box	4	9	.	+	.	ID=id-HHV8GK18_gp01-2;Dbxref=GeneID:4961511;gbkey=regulatory;gene=K1;locus_tag=HHV8GK18_gp01;regulatory_class=TATA_box
+NC_009333.1	RefSeq	polyA_signal_sequence	1053	1058	.	+	.	ID=id-HHV8GK18_gp01-3;Dbxref=GeneID:4961511;gbkey=regulatory;gene=K1;locus_tag=HHV8GK18_gp01;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	1052	17026	.	+	.	ID=gene-HHV8GK18_gp02;Dbxref=GeneID:4961488;Name=ORF4;gbkey=Gene;gene=ORF4;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp02
+NC_009333.1	RefSeq	CDS	1112	2764	.	+	0	ID=cds-YP_001129351.1;Parent=gene-HHV8GK18_gp02;Dbxref=Genbank:YP_001129351.1,GeneID:4961488;Name=YP_001129351.1;Note=membrane protein%3B contains four SCR domains;gbkey=CDS;gene=ORF4;locus_tag=HHV8GK18_gp02;product=KCP;protein_id=YP_001129351.1
+NC_009333.1	RefSeq	sequence_feature	1272	41618	.	+	.	ID=id-NC_009333.1:1272..41618;Note=insert in cos79;gbkey=misc_feature
+NC_009333.1	RefSeq	gene	3179	17026	.	+	.	ID=gene-HHV8GK18_gp03;Dbxref=GeneID:4961521;Name=ORF6;gbkey=Gene;gene=ORF6;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp03
+NC_009333.1	RefSeq	CDS	3179	6577	.	+	0	ID=cds-YP_001129352.1;Parent=gene-HHV8GK18_gp03;Dbxref=Genbank:YP_001129352.1,GeneID:4961521;Name=YP_001129352.1;Note=herpesvirus core gene UL29 family;gbkey=CDS;gene=ORF6;locus_tag=HHV8GK18_gp03;product=ORF6;protein_id=YP_001129352.1
+NC_009333.1	RefSeq	gene	6594	17026	.	+	.	ID=gene-HHV8GK18_gp04;Dbxref=GeneID:4961505;Name=ORF7;gbkey=Gene;gene=ORF7;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp04
+NC_009333.1	RefSeq	CDS	6594	8681	.	+	0	ID=cds-YP_001129353.1;Parent=gene-HHV8GK18_gp04;Dbxref=Genbank:YP_001129353.1,GeneID:4961505;Name=YP_001129353.1;Note=herpesvirus core gene UL28 family;gbkey=CDS;gene=ORF7;locus_tag=HHV8GK18_gp04;product=ORF7;protein_id=YP_001129353.1
+NC_009333.1	RefSeq	gene	8665	17026	.	+	.	ID=gene-HHV8GK18_gp05;Dbxref=GeneID:4961501;Name=ORF8;gbkey=Gene;gene=ORF8;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp05
+NC_009333.1	RefSeq	CDS	8665	11202	.	+	0	ID=cds-YP_001129354.1;Parent=gene-HHV8GK18_gp05;Dbxref=Genbank:YP_001129354.1,GeneID:4961501;Name=YP_001129354.1;Note=herpesvirus core gene UL27 family;gbkey=CDS;gene=ORF8;locus_tag=HHV8GK18_gp05;product=ORF8;protein_id=YP_001129354.1
+NC_009333.1	RefSeq	sequence_feature	11325	53653	.	+	.	ID=id-NC_009333.1:11325..53653;Note=insert in cos29;gbkey=misc_feature
+NC_009333.1	RefSeq	gene	11329	17026	.	+	.	ID=gene-HHV8GK18_gp06;Dbxref=GeneID:4961513;Name=ORF9;gbkey=Gene;gene=ORF9;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp06
+NC_009333.1	RefSeq	CDS	11329	14367	.	+	0	ID=cds-YP_001129355.1;Parent=gene-HHV8GK18_gp06;Dbxref=Genbank:YP_001129355.1,GeneID:4961513;Name=YP_001129355.1;Note=herpesvirus core gene UL30 family;gbkey=CDS;gene=ORF9;locus_tag=HHV8GK18_gp06;product=ORF9;protein_id=YP_001129355.1
+NC_009333.1	RefSeq	gene	14485	17026	.	+	.	ID=gene-HHV8GK18_gp07;Dbxref=GeneID:4961456;Name=ORF10;gbkey=Gene;gene=ORF10;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp07
+NC_009333.1	RefSeq	CDS	14485	15741	.	+	0	ID=cds-YP_001129356.1;Parent=gene-HHV8GK18_gp07;Dbxref=Genbank:YP_001129356.1,GeneID:4961456;Name=YP_001129356.1;Note=derived from herpesvirus dUTPase%3B related to HHV-5 UL82%2C UL83 and UL84;gbkey=CDS;gene=ORF10;locus_tag=HHV8GK18_gp07;product=ORF10;protein_id=YP_001129356.1
+NC_009333.1	RefSeq	gene	15756	17026	.	+	.	ID=gene-HHV8GK18_gp08;Dbxref=GeneID:4961439;Name=ORF11;gbkey=Gene;gene=ORF11;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp08
+NC_009333.1	RefSeq	CDS	15756	16979	.	+	0	ID=cds-YP_001129357.1;Parent=gene-HHV8GK18_gp08;Dbxref=Genbank:YP_001129357.1,GeneID:4961439;Name=YP_001129357.1;Note=derived from herpesvirus dUTPase%3B related to HHV-5 UL82%2C UL83 and UL84;gbkey=CDS;gene=ORF11;locus_tag=HHV8GK18_gp08;product=ORF11;protein_id=YP_001129357.1
+NC_009333.1	RefSeq	polyA_signal_sequence	17021	17026	.	+	.	ID=id-NC_009333.1:17021..17026;Note=ORF4%2C ORF6%2C ORF7%2C ORF8%2C ORF9%2C ORF10%2C ORF11;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	17166	18519	.	-	.	ID=gene-HHV8GK18_gp09;Dbxref=GeneID:4961454;Name=ORF2;gbkey=Gene;gene=ORF2;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp09
+NC_009333.1	RefSeq	CDS	17887	18519	.	-	0	ID=cds-YP_001129359.1;Parent=gene-HHV8GK18_gp09;Dbxref=Genbank:YP_001129359.1,GeneID:4961454;Name=YP_001129359.1;gbkey=CDS;gene=ORF2;locus_tag=HHV8GK18_gp09;product=ORF2;protein_id=YP_001129359.1
+NC_009333.1	RefSeq	gene	17166	17841	.	-	.	ID=gene-HHV8GK18_gp10;Dbxref=GeneID:4961449;Name=K2;gbkey=Gene;gene=K2;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp10
+NC_009333.1	RefSeq	CDS	17227	17841	.	-	0	ID=cds-YP_001129358.1;Parent=gene-HHV8GK18_gp10;Dbxref=Genbank:YP_001129358.1,GeneID:4961449;Name=YP_001129358.1;gbkey=CDS;gene=K2;locus_tag=HHV8GK18_gp10;product=K2;protein_id=YP_001129358.1
+NC_009333.1	RefSeq	polyA_signal_sequence	17166	17171	.	-	.	ID=id-NC_009333.1:17166..17171;Note=K2%2C ORF2;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	18573	19542	.	-	.	ID=gene-HHV8GK18_gp11;Dbxref=GeneID:4961486;Name=K3;gbkey=Gene;gene=K3;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp11
+NC_009333.1	RefSeq	CDS	18574	19542	.	-	0	ID=cds-YP_001129360.1;Parent=gene-HHV8GK18_gp11;Dbxref=Genbank:YP_001129360.1,GeneID:4961486;Name=YP_001129360.1;Note=membrane protein%3B related to K5;gbkey=CDS;gene=K3;locus_tag=HHV8GK18_gp11;product=K3;protein_id=YP_001129360.1
+NC_009333.1	RefSeq	polyA_signal_sequence	18573	18578	.	-	.	ID=id-HHV8GK18_gp11;Dbxref=GeneID:4961486;gbkey=regulatory;gene=K3;locus_tag=HHV8GK18_gp11;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	19822	21036	.	-	.	ID=gene-HHV8GK18_gp12;Dbxref=GeneID:4961481;Name=ORF70;gbkey=Gene;gene=ORF70;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp12
+NC_009333.1	RefSeq	CDS	20023	21036	.	-	0	ID=cds-YP_001129361.1;Parent=gene-HHV8GK18_gp12;Dbxref=Genbank:YP_001129361.1,GeneID:4961481;Name=YP_001129361.1;gbkey=CDS;gene=ORF70;locus_tag=HHV8GK18_gp12;product=ORF70;protein_id=YP_001129361.1
+NC_009333.1	RefSeq	polyA_signal_sequence	19822	19827	.	-	.	ID=id-HHV8GK18_gp12;Dbxref=GeneID:4961481;gbkey=regulatory;gene=ORF70;locus_tag=HHV8GK18_gp12;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	21275	21764	.	-	.	ID=gene-HHV8GK18_gp13;Dbxref=GeneID:4961514;Name=K4;gbkey=Gene;gene=K4;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp13
+NC_009333.1	RefSeq	CDS	21480	21764	.	-	0	ID=cds-YP_001129362.1;Parent=gene-HHV8GK18_gp13;Dbxref=Genbank:YP_001129362.1,GeneID:4961514;Name=YP_001129362.1;gbkey=CDS;gene=K4;locus_tag=HHV8GK18_gp13;product=K4;protein_id=YP_001129362.1
+NC_009333.1	RefSeq	polyA_signal_sequence	21275	21280	.	-	.	ID=id-HHV8GK18_gp13;Dbxref=GeneID:4961514;gbkey=regulatory;gene=K4;locus_tag=HHV8GK18_gp13;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	21907	23078	.	-	.	ID=gene-HHV8GK18_gp14;Dbxref=GeneID:4961450;Name=K4.2;gbkey=Gene;gene=K4.2;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp14
+NC_009333.1	RefSeq	CDS	22530	23078	.	-	0	ID=cds-YP_001129364.1;Parent=gene-HHV8GK18_gp14;Dbxref=Genbank:YP_001129364.1,GeneID:4961450;Name=YP_001129364.1;Note=contains hydrophobic domains;gbkey=CDS;gene=K4.2;locus_tag=HHV8GK18_gp14;product=K4.2;protein_id=YP_001129364.1
+NC_009333.1	RefSeq	gene	21907	22461	.	-	.	ID=gene-HHV8GK18_gp15;Dbxref=GeneID:4961436;Name=K4.1;gbkey=Gene;gene=K4.1;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp15
+NC_009333.1	RefSeq	CDS	22117	22461	.	-	0	ID=cds-YP_001129363.1;Parent=gene-HHV8GK18_gp15;Dbxref=Genbank:YP_001129363.1,GeneID:4961436;Name=YP_001129363.1;gbkey=CDS;gene=K4.1;locus_tag=HHV8GK18_gp15;product=K4.1;protein_id=YP_001129363.1
+NC_009333.1	RefSeq	polyA_signal_sequence	21907	21912	.	-	.	ID=id-NC_009333.1:21907..21912;Note=K4.1%2C K4.2;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	inverted_repeat	23082	24228	.	+	.	ID=id-NC_009333.1:23082..24228;gbkey=repeat_region;rpt_family=LIR1;rpt_type=inverted
+NC_009333.1	RefSeq	direct_repeat	24230	24808	.	+	.	ID=id-NC_009333.1:24230..24808;gbkey=repeat_region;rpt_family=DR1;rpt_type=direct
+NC_009333.1	RefSeq	direct_repeat	24823	25045	.	+	.	ID=id-NC_009333.1:24823..25045;gbkey=repeat_region;rpt_family=DR2;rpt_type=direct
+NC_009333.1	RefSeq	gene	25865	26635	.	-	.	ID=gene-HHV8GK18_gp16;Dbxref=GeneID:4961442;Name=K5;gbkey=Gene;gene=K5;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp16
+NC_009333.1	RefSeq	CDS	25865	26635	.	-	0	ID=cds-YP_001129365.1;Parent=gene-HHV8GK18_gp16;Dbxref=Genbank:YP_001129365.1,GeneID:4961442;Name=YP_001129365.1;Note=membrane protein%3B related to K3;gbkey=CDS;gene=K5;locus_tag=HHV8GK18_gp16;product=K5;protein_id=YP_001129365.1
+NC_009333.1	RefSeq	gene	27067	27576	.	-	.	ID=gene-HHV8GK18_gp17;Dbxref=GeneID:4961510;Name=K6;gbkey=Gene;gene=K6;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp17
+NC_009333.1	RefSeq	CDS	27289	27576	.	-	0	ID=cds-YP_001129366.1;Parent=gene-HHV8GK18_gp17;Dbxref=Genbank:YP_001129366.1,GeneID:4961510;Name=YP_001129366.1;gbkey=CDS;gene=K6;locus_tag=HHV8GK18_gp17;product=K6;protein_id=YP_001129366.1
+NC_009333.1	RefSeq	polyA_signal_sequence	27067	27072	.	-	.	ID=id-HHV8GK18_gp17;Dbxref=GeneID:4961510;gbkey=regulatory;gene=K6;locus_tag=HHV8GK18_gp17;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	28774	29876	.	+	.	ID=gene-HHV8GK18_gp18;Dbxref=GeneID:4961500;Name=K7;gbkey=Gene;gene=K7;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp18
+NC_009333.1	RefSeq	CDS	28774	29154	.	+	0	ID=cds-YP_001129367.1;Parent=gene-HHV8GK18_gp18;Dbxref=Genbank:YP_001129367.1,GeneID:4961500;Name=YP_001129367.1;Note=contains hydrophobic domain;gbkey=CDS;gene=K7;locus_tag=HHV8GK18_gp18;product=K7;protein_id=YP_001129367.1
+NC_009333.1	RefSeq	gene	28819	29895	.	+	.	ID=gene-HHV8_gs01;Dbxref=GeneID:4961489;Name=HHV8_gs01;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs01
+NC_009333.1	RefSeq	transcript	28819	29895	.	+	.	ID=rna-HHV8_gs01;Parent=gene-HHV8_gs01;Dbxref=GeneID:4961489;Note=nut-1%3B PAN;gbkey=misc_RNA;locus_tag=HHV8_gs01;product=T1.1
+NC_009333.1	RefSeq	exon	28819	29895	.	+	.	ID=exon-HHV8_gs01-1;Parent=rna-HHV8_gs01;Dbxref=GeneID:4961489;Note=nut-1%3B PAN;gbkey=misc_RNA;locus_tag=HHV8_gs01;product=T1.1
+NC_009333.1	RefSeq	polyA_signal_sequence	29871	29876	.	+	.	ID=id-NC_009333.1:29871..29876;Note=K7%2C T1.1;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	direct_repeat	29927	30055	.	+	.	ID=id-NC_009333.1:29927..30055;gbkey=repeat_region;rpt_family=DR3;rpt_type=direct
+NC_009333.1	RefSeq	gene	30242	30834	.	+	.	ID=gene-HHV8GK18_gp19;Dbxref=GeneID:4961447;Name=ORF16;gbkey=Gene;gene=ORF16;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp19
+NC_009333.1	RefSeq	CDS	30242	30769	.	+	0	ID=cds-YP_001129368.1;Parent=gene-HHV8GK18_gp19;Dbxref=Genbank:YP_001129368.1,GeneID:4961447;Name=YP_001129368.1;gbkey=CDS;gene=ORF16;locus_tag=HHV8GK18_gp19;product=ORF16;protein_id=YP_001129368.1
+NC_009333.1	RefSeq	polyA_signal_sequence	30829	30834	.	+	.	ID=id-HHV8GK18_gp19;Dbxref=GeneID:4961447;gbkey=regulatory;gene=ORF16;locus_tag=HHV8GK18_gp19;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	30857	32524	.	-	.	ID=gene-HHV8GK18_gp20;Dbxref=GeneID:4961478;Name=ORF17;gbkey=Gene;gene=ORF17;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp20
+NC_009333.1	RefSeq	CDS	30920	32524	.	-	0	ID=cds-YP_001129369.1;Parent=gene-HHV8GK18_gp20;Dbxref=Genbank:YP_001129369.1,GeneID:4961478;Name=YP_001129369.1;Note=herpesvirus core gene UL26 family;gbkey=CDS;gene=ORF17;locus_tag=HHV8GK18_gp20;product=ORF17;protein_id=YP_001129369.1
+NC_009333.1	RefSeq	gene	30857	31786	.	-	.	ID=gene-HHV8GK18_gp21;Dbxref=GeneID:4961482;Name=ORF17.5;gbkey=Gene;gene=ORF17.5;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp21
+NC_009333.1	RefSeq	CDS	30920	31786	.	-	0	ID=cds-YP_001129370.1;Parent=gene-HHV8GK18_gp21;Dbxref=Genbank:YP_001129370.1,GeneID:4961482;Name=YP_001129370.1;Note=herpesvirus core gene UL26.5 family;gbkey=CDS;gene=ORF17.5;locus_tag=HHV8GK18_gp21;product=ORF17.5;protein_id=YP_001129370.1
+NC_009333.1	RefSeq	polyA_signal_sequence	30857	30862	.	-	.	ID=id-NC_009333.1:30857..30862;Note=ORF17%2C ORF17.5;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	32523	33535	.	+	.	ID=gene-HHV8GK18_gp22;Dbxref=GeneID:4961499;Name=ORF18;gbkey=Gene;gene=ORF18;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp22
+NC_009333.1	RefSeq	CDS	32523	33296	.	+	0	ID=cds-YP_001129371.1;Parent=gene-HHV8GK18_gp22;Dbxref=Genbank:YP_001129371.1,GeneID:4961499;Name=YP_001129371.1;Note=related to HHV-5 UL79;gbkey=CDS;gene=ORF18;locus_tag=HHV8GK18_gp22;product=ORF18;protein_id=YP_001129371.1
+NC_009333.1	RefSeq	polyA_signal_sequence	33530	33535	.	+	.	ID=id-HHV8GK18_gp22;Dbxref=GeneID:4961499;gbkey=regulatory;gene=ORF18;locus_tag=HHV8GK18_gp22;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	32967	35483	.	-	.	ID=gene-HHV8GK18_gp23;Dbxref=GeneID:4961477;Name=ORF20;gbkey=Gene;gene=ORF20;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp23
+NC_009333.1	RefSeq	CDS	34710	35483	.	-	0	ID=cds-YP_001129373.1;Parent=gene-HHV8GK18_gp23;Dbxref=Genbank:YP_001129373.1,GeneID:4961477;Name=YP_001129373.1;gbkey=CDS;gene=ORF20;locus_tag=HHV8GK18_gp23;product=ORF20;protein_id=YP_001129373.1
+NC_009333.1	RefSeq	gene	32967	34942	.	-	.	ID=gene-HHV8GK18_gp24;Dbxref=GeneID:4961508;Name=ORF19;gbkey=Gene;gene=ORF19;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp24
+NC_009333.1	RefSeq	CDS	33293	34942	.	-	0	ID=cds-YP_001129372.1;Parent=gene-HHV8GK18_gp24;Dbxref=Genbank:YP_001129372.1,GeneID:4961508;Name=YP_001129372.1;Note=herpesvirus core gene UL25 family;gbkey=CDS;gene=ORF19;locus_tag=HHV8GK18_gp24;product=ORF19;protein_id=YP_001129372.1
+NC_009333.1	RefSeq	polyA_signal_sequence	32967	32972	.	-	.	ID=id-NC_009333.1:32967..32972;Note=ORF19%2C ORF20;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	sequence_feature	35181	73829	.	+	.	ID=id-NC_009333.1:35181..73829;Note=insert in cos4;gbkey=misc_feature
+NC_009333.1	RefSeq	gene	35482	39416	.	+	.	ID=gene-HHV8GK18_gp25;Dbxref=GeneID:4961484;Name=ORF21;gbkey=Gene;gene=ORF21;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp25
+NC_009333.1	RefSeq	CDS	35482	37224	.	+	0	ID=cds-YP_001129374.1;Parent=gene-HHV8GK18_gp25;Dbxref=Genbank:YP_001129374.1,GeneID:4961484;Name=YP_001129374.1;Note=herpesvirus core gene UL23 family;gbkey=CDS;gene=ORF21;locus_tag=HHV8GK18_gp25;product=ORF21;protein_id=YP_001129374.1
+NC_009333.1	RefSeq	gene	37212	39416	.	+	.	ID=gene-HHV8GK18_gp26;Dbxref=GeneID:4961506;Name=ORF22;gbkey=Gene;gene=ORF22;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp26
+NC_009333.1	RefSeq	CDS	37212	39404	.	+	0	ID=cds-YP_001129375.1;Parent=gene-HHV8GK18_gp26;Dbxref=Genbank:YP_001129375.1,GeneID:4961506;Name=YP_001129375.1;Note=herpesvirus core gene UL22 family;gbkey=CDS;gene=ORF22;locus_tag=HHV8GK18_gp26;product=ORF22;protein_id=YP_001129375.1
+NC_009333.1	RefSeq	gene	39397	42877	.	-	.	ID=gene-HHV8GK18_gp27;Dbxref=GeneID:4961485;Name=ORF24;gbkey=Gene;gene=ORF24;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp27
+NC_009333.1	RefSeq	CDS	40619	42877	.	-	0	ID=cds-YP_001129377.1;Parent=gene-HHV8GK18_gp27;Dbxref=Genbank:YP_001129377.1,GeneID:4961485;Name=YP_001129377.1;Note=related to HHV-5 UL87;gbkey=CDS;gene=ORF24;locus_tag=HHV8GK18_gp27;product=ORF24;protein_id=YP_001129377.1
+NC_009333.1	RefSeq	gene	39397	40615	.	-	.	ID=gene-HHV8GK18_gp28;Dbxref=GeneID:4961503;Name=ORF23;gbkey=Gene;gene=ORF23;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp28
+NC_009333.1	RefSeq	CDS	39401	40615	.	-	0	ID=cds-YP_001129376.1;Parent=gene-HHV8GK18_gp28;Dbxref=Genbank:YP_001129376.1,GeneID:4961503;Name=YP_001129376.1;gbkey=CDS;gene=ORF23;locus_tag=HHV8GK18_gp28;product=ORF23;protein_id=YP_001129376.1
+NC_009333.1	RefSeq	polyA_signal_sequence	39397	39402	.	-	.	ID=id-NC_009333.1:39397..39402;Note=ORF23%2C ORF24;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	polyA_signal_sequence	39411	39416	.	+	.	ID=id-NC_009333.1:39411..39416;Note=ORF21%2C ORF22;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	42876	48846	.	+	.	ID=gene-HHV8GK18_gp29;Dbxref=GeneID:4961452;Name=ORF25;gbkey=Gene;gene=ORF25;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp29
+NC_009333.1	RefSeq	CDS	42876	47006	.	+	0	ID=cds-YP_001129378.1;Parent=gene-HHV8GK18_gp29;Dbxref=Genbank:YP_001129378.1,GeneID:4961452;Name=YP_001129378.1;Note=herpesvirus core gene UL19 family;gbkey=CDS;gene=ORF25;locus_tag=HHV8GK18_gp29;product=ORF25;protein_id=YP_001129378.1
+NC_009333.1	RefSeq	gene	47032	48846	.	+	.	ID=gene-HHV8GK18_gp30;Dbxref=GeneID:4961509;Name=ORF26;gbkey=Gene;gene=ORF26;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp30
+NC_009333.1	RefSeq	CDS	47032	47949	.	+	0	ID=cds-YP_001129379.1;Parent=gene-HHV8GK18_gp30;Dbxref=Genbank:YP_001129379.1,GeneID:4961509;Name=YP_001129379.1;Note=herpesvirus core gene UL18 family;gbkey=CDS;gene=ORF26;locus_tag=HHV8GK18_gp30;product=ORF26;protein_id=YP_001129379.1
+NC_009333.1	RefSeq	gene	47973	48846	.	+	.	ID=gene-HHV8GK18_gp31;Dbxref=GeneID:4961487;Name=ORF27;gbkey=Gene;gene=ORF27;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp31
+NC_009333.1	RefSeq	CDS	47973	48845	.	+	0	ID=cds-YP_001129380.1;Parent=gene-HHV8GK18_gp31;Dbxref=Genbank:YP_001129380.1,GeneID:4961487;Name=YP_001129380.1;gbkey=CDS;gene=ORF27;locus_tag=HHV8GK18_gp31;product=ORF27;protein_id=YP_001129380.1
+NC_009333.1	RefSeq	sequence_feature	48627	89886	.	+	.	ID=id-NC_009333.1:48627..89886;Note=insert in cos19;gbkey=misc_feature
+NC_009333.1	RefSeq	polyA_signal_sequence	48841	48846	.	+	.	ID=id-NC_009333.1:48841..48846;Note=ORF25%2C ORF26%2C ORF27;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	49091	49399	.	+	.	ID=gene-HHV8GK18_gp32;Dbxref=GeneID:4961507;Name=ORF28;gbkey=Gene;gene=ORF28;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp32
+NC_009333.1	RefSeq	CDS	49091	49399	.	+	0	ID=cds-YP_001129381.1;Parent=gene-HHV8GK18_gp32;Dbxref=Genbank:YP_001129381.1,GeneID:4961507;Name=YP_001129381.1;gbkey=CDS;gene=ORF28;locus_tag=HHV8GK18_gp32;product=ORF28;protein_id=YP_001129381.1
+NC_009333.1	RefSeq	gene	49461	54775	.	-	.	ID=gene-HHV8GK18_gp33;Dbxref=GeneID:4961443;Name=ORF29;gbkey=Gene;gene=ORF29;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp33
+NC_009333.1	RefSeq	CDS	53855	54775	.	-	0	ID=cds-YP_001129382.1;Parent=gene-HHV8GK18_gp33;Dbxref=Genbank:YP_001129382.1,GeneID:4961443;Name=YP_001129382.1;Note=herpesvirus core gene UL15 family;gbkey=CDS;gene=ORF29;locus_tag=HHV8GK18_gp33;product=ORF29;protein_id=YP_001129382.1
+NC_009333.1	RefSeq	CDS	49462	50604	.	-	0	ID=cds-YP_001129382.1;Parent=gene-HHV8GK18_gp33;Dbxref=Genbank:YP_001129382.1,GeneID:4961443;Name=YP_001129382.1;Note=herpesvirus core gene UL15 family;gbkey=CDS;gene=ORF29;locus_tag=HHV8GK18_gp33;product=ORF29;protein_id=YP_001129382.1
+NC_009333.1	RefSeq	polyA_signal_sequence	49461	49466	.	-	.	ID=id-HHV8GK18_gp33;Dbxref=GeneID:4961443;gbkey=regulatory;gene=ORF29;locus_tag=HHV8GK18_gp33;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	50723	54176	.	+	.	ID=gene-HHV8GK18_gp34;Dbxref=GeneID:4961433;Name=ORF30;gbkey=Gene;gene=ORF30;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp34
+NC_009333.1	RefSeq	CDS	50723	50956	.	+	0	ID=cds-YP_001129383.1;Parent=gene-HHV8GK18_gp34;Dbxref=Genbank:YP_001129383.1,GeneID:4961433;Name=YP_001129383.1;Note=related to HHV-5 UL91;gbkey=CDS;gene=ORF30;locus_tag=HHV8GK18_gp34;product=ORF30;protein_id=YP_001129383.1
+NC_009333.1	RefSeq	gene	50953	54176	.	+	.	ID=gene-HHV8GK18_gp35;Dbxref=GeneID:4961498;Name=ORF31;gbkey=Gene;gene=ORF31;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp35
+NC_009333.1	RefSeq	CDS	50953	51537	.	+	0	ID=cds-YP_001129384.1;Parent=gene-HHV8GK18_gp35;Dbxref=Genbank:YP_001129384.1,GeneID:4961498;Name=YP_001129384.1;Note=related to HHV-5 UL92;gbkey=CDS;gene=ORF31;locus_tag=HHV8GK18_gp35;product=ORF31;protein_id=YP_001129384.1
+NC_009333.1	RefSeq	gene	51504	54176	.	+	.	ID=gene-HHV8GK18_gp36;Dbxref=GeneID:4961479;Name=ORF32;gbkey=Gene;gene=ORF32;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp36
+NC_009333.1	RefSeq	CDS	51504	52868	.	+	0	ID=cds-YP_001129385.1;Parent=gene-HHV8GK18_gp36;Dbxref=Genbank:YP_001129385.1,GeneID:4961479;Name=YP_001129385.1;Note=herpesvirus core gene UL17 family;gbkey=CDS;gene=ORF32;locus_tag=HHV8GK18_gp36;product=ORF32;protein_id=YP_001129385.1
+NC_009333.1	RefSeq	gene	52861	54176	.	+	.	ID=gene-HHV8GK18_gp37;Dbxref=GeneID:4961502;Name=ORF33;gbkey=Gene;gene=ORF33;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp37
+NC_009333.1	RefSeq	CDS	52861	53865	.	+	0	ID=cds-YP_001129386.1;Parent=gene-HHV8GK18_gp37;Dbxref=Genbank:YP_001129386.1,GeneID:4961502;Name=YP_001129386.1;Note=herpesvirus core gene UL16 family;gbkey=CDS;gene=ORF33;locus_tag=HHV8GK18_gp37;product=ORF33;protein_id=YP_001129386.1
+NC_009333.1	RefSeq	polyA_signal_sequence	54171	54176	.	+	.	ID=id-NC_009333.1:54171..54176;Note=ORF30%2C ORF31%2C ORF32%2C ORF33;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	54635	58974	.	+	.	ID=gene-HHV8GK18_gp38;Dbxref=GeneID:4961504;Name=ORF34;gbkey=Gene;gene=ORF34;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp38
+NC_009333.1	RefSeq	mRNA	54665	58974	.	+	.	ID=rna-HHV8GK18_gp38;Parent=gene-HHV8GK18_gp38;Dbxref=GeneID:4961504;gbkey=mRNA;gene=ORF34;locus_tag=HHV8GK18_gp38
+NC_009333.1	RefSeq	exon	54665	58974	.	+	.	ID=exon-HHV8GK18_gp38-1;Parent=rna-HHV8GK18_gp38;Dbxref=GeneID:4961504;gbkey=mRNA;gene=ORF34;locus_tag=HHV8GK18_gp38
+NC_009333.1	RefSeq	CDS	54774	55757	.	+	0	ID=cds-YP_001129387.1;Parent=rna-HHV8GK18_gp38;Dbxref=Genbank:YP_001129387.1,GeneID:4961504;Name=YP_001129387.1;Note=related to HHV-5 UL95;gbkey=CDS;gene=ORF34;locus_tag=HHV8GK18_gp38;product=ORF34;protein_id=YP_001129387.1
+NC_009333.1	RefSeq	TATA_box	54635	54640	.	+	.	ID=id-HHV8GK18_gp38;Dbxref=GeneID:4961504;gbkey=regulatory;gene=ORF34;locus_tag=HHV8GK18_gp38;regulatory_class=TATA_box
+NC_009333.1	RefSeq	gene	55635	58974	.	+	.	ID=gene-HHV8GK18_gp39;Dbxref=GeneID:4961512;Name=ORF35;gbkey=Gene;gene=ORF35;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp39
+NC_009333.1	RefSeq	mRNA	55666	58974	.	+	.	ID=rna-HHV8GK18_gp39;Parent=gene-HHV8GK18_gp39;Dbxref=GeneID:4961512;gbkey=mRNA;gene=ORF35;locus_tag=HHV8GK18_gp39
+NC_009333.1	RefSeq	exon	55666	58974	.	+	.	ID=exon-HHV8GK18_gp39-1;Parent=rna-HHV8GK18_gp39;Dbxref=GeneID:4961512;gbkey=mRNA;gene=ORF35;locus_tag=HHV8GK18_gp39
+NC_009333.1	RefSeq	CDS	55738	56190	.	+	0	ID=cds-YP_001129388.1;Parent=rna-HHV8GK18_gp39;Dbxref=Genbank:YP_001129388.1,GeneID:4961512;Name=YP_001129388.1;Note=herpesvirus core gene UL14 family;gbkey=CDS;gene=ORF35;locus_tag=HHV8GK18_gp39;product=ORF35;protein_id=YP_001129388.1
+NC_009333.1	RefSeq	TATA_box	55635	55640	.	+	.	ID=id-HHV8GK18_gp39;Dbxref=GeneID:4961512;gbkey=regulatory;gene=ORF35;locus_tag=HHV8GK18_gp39;regulatory_class=TATA_box
+NC_009333.1	RefSeq	gene	56075	58974	.	+	.	ID=gene-HHV8GK18_gp40;Dbxref=GeneID:4961434;Name=ORF36;gbkey=Gene;gene=ORF36;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp40
+NC_009333.1	RefSeq	CDS	56075	57409	.	+	0	ID=cds-YP_001129389.1;Parent=gene-HHV8GK18_gp40;Dbxref=Genbank:YP_001129389.1,GeneID:4961434;Name=YP_001129389.1;Note=herpesvirus core gene UL13 family;gbkey=CDS;gene=ORF36;locus_tag=HHV8GK18_gp40;product=ORF36;protein_id=YP_001129389.1
+NC_009333.1	RefSeq	gene	57372	58974	.	+	.	ID=gene-HHV8GK18_gp41;Dbxref=GeneID:4961483;Name=ORF37;gbkey=Gene;gene=ORF37;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp41
+NC_009333.1	RefSeq	CDS	57372	58832	.	+	0	ID=cds-YP_001129390.1;Parent=gene-HHV8GK18_gp41;Dbxref=Genbank:YP_001129390.1,GeneID:4961483;Name=YP_001129390.1;Note=herpesvirus core gene UL12 family;gbkey=CDS;gene=ORF37;locus_tag=HHV8GK18_gp41;product=ORF37;protein_id=YP_001129390.1
+NC_009333.1	RefSeq	gene	58787	58974	.	+	.	ID=gene-HHV8GK18_gp42;Dbxref=GeneID:4961435;Name=ORF38;gbkey=Gene;gene=ORF38;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp42
+NC_009333.1	RefSeq	CDS	58787	58972	.	+	0	ID=cds-YP_001129391.1;Parent=gene-HHV8GK18_gp42;Dbxref=Genbank:YP_001129391.1,GeneID:4961435;Name=YP_001129391.1;Note=herpesvirus core gene UL11 family;gbkey=CDS;gene=ORF38;locus_tag=HHV8GK18_gp42;product=ORF38;protein_id=YP_001129391.1
+NC_009333.1	RefSeq	polyA_signal_sequence	58952	58957	.	+	.	ID=id-NC_009333.1:58952..58957;Note=ORF34%2C ORF35%2C ORF36%2C ORF37%2C ORF38;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	polyA_site	58974	58974	.	+	.	ID=id-NC_009333.1:58974..58974;Note=ORF34%2C ORF35%2C ORF36%2C ORF37%2C ORF38;gbkey=polyA_site
+NC_009333.1	RefSeq	gene	59000	60274	.	-	.	ID=gene-HHV8GK18_gp43;Dbxref=GeneID:4961437;Name=ORF39;gbkey=Gene;gene=ORF39;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp43
+NC_009333.1	RefSeq	CDS	59072	60274	.	-	0	ID=cds-YP_001129392.1;Parent=gene-HHV8GK18_gp43;Dbxref=Genbank:YP_001129392.1,GeneID:4961437;Name=YP_001129392.1;Note=herpesvirus core gene UL10 family;gbkey=CDS;gene=ORF39;locus_tag=HHV8GK18_gp43;product=ORF39;protein_id=YP_001129392.1
+NC_009333.1	RefSeq	polyA_signal_sequence	59000	59005	.	-	.	ID=id-HHV8GK18_gp43;Dbxref=GeneID:4961437;gbkey=regulatory;gene=ORF39;locus_tag=HHV8GK18_gp43;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	60407	62644	.	+	.	ID=gene-HHV8GK18_gp44;Dbxref=GeneID:4961438;Name=ORF40;gbkey=Gene;gene=ORF40;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp44
+NC_009333.1	RefSeq	CDS	60407	61756	.	+	0	ID=cds-YP_001129393.1;Parent=gene-HHV8GK18_gp44;Dbxref=Genbank:YP_001129393.1,GeneID:4961438;Name=YP_001129393.1;Note=herpesvirus core gene UL8 family;gbkey=CDS;gene=ORF40;locus_tag=HHV8GK18_gp44;product=ORF40;protein_id=YP_001129393.1
+NC_009333.1	RefSeq	CDS	61884	62543	.	+	0	ID=cds-YP_001129393.1;Parent=gene-HHV8GK18_gp44;Dbxref=Genbank:YP_001129393.1,GeneID:4961438;Name=YP_001129393.1;Note=herpesvirus core gene UL8 family;gbkey=CDS;gene=ORF40;locus_tag=HHV8GK18_gp44;product=ORF40;protein_id=YP_001129393.1
+NC_009333.1	RefSeq	polyA_signal_sequence	62639	62644	.	+	.	ID=id-HHV8GK18_gp44;Dbxref=GeneID:4961438;gbkey=regulatory;gene=ORF40;locus_tag=HHV8GK18_gp44;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	62534	65052	.	-	.	ID=gene-HHV8GK18_gp45;Dbxref=GeneID:4961497;Name=ORF43;gbkey=Gene;gene=ORF43;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp45
+NC_009333.1	RefSeq	CDS	63235	65052	.	-	0	ID=cds-YP_001129395.1;Parent=gene-HHV8GK18_gp45;Dbxref=Genbank:YP_001129395.1,GeneID:4961497;Name=YP_001129395.1;Note=herpesvirus core gene UL6 family;gbkey=CDS;gene=ORF43;locus_tag=HHV8GK18_gp45;product=ORF43;protein_id=YP_001129395.1
+NC_009333.1	RefSeq	gene	62534	63371	.	-	.	ID=gene-HHV8GK18_gp46;Dbxref=GeneID:4961440;Name=ORF42;gbkey=Gene;gene=ORF42;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp46
+NC_009333.1	RefSeq	CDS	62535	63371	.	-	0	ID=cds-YP_001129394.1;Parent=gene-HHV8GK18_gp46;Dbxref=Genbank:YP_001129394.1,GeneID:4961440;Name=YP_001129394.1;Note=herpesvirus core gene UL7 family;gbkey=CDS;gene=ORF42;locus_tag=HHV8GK18_gp46;product=ORF42;protein_id=YP_001129394.1
+NC_009333.1	RefSeq	polyA_signal_sequence	62534	62639	.	-	.	ID=id-NC_009333.1:62534..62639;Note=ORF42%2C ORF43;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	64991	67399	.	+	.	ID=gene-HHV8GK18_gp47;Dbxref=GeneID:4961457;Name=ORF44;gbkey=Gene;gene=ORF44;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp47
+NC_009333.1	RefSeq	CDS	64991	67357	.	+	0	ID=cds-YP_001129396.1;Parent=gene-HHV8GK18_gp47;Dbxref=Genbank:YP_001129396.1,GeneID:4961457;Name=YP_001129396.1;Note=herpesvirus core gene UL5 family;gbkey=CDS;gene=ORF44;locus_tag=HHV8GK18_gp47;product=ORF44;protein_id=YP_001129396.1
+NC_009333.1	RefSeq	polyA_signal_sequence	67394	67399	.	+	.	ID=id-HHV8GK18_gp47;Dbxref=GeneID:4961457;gbkey=regulatory;gene=ORF44;locus_tag=HHV8GK18_gp47;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	67444	71480	.	-	.	ID=gene-HHV8GK18_gp48;Dbxref=GeneID:4961458;Name=ORF48;gbkey=Gene;gene=ORF48;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp48
+NC_009333.1	RefSeq	CDS	70272	71480	.	-	0	ID=cds-YP_001129400.1;Parent=gene-HHV8GK18_gp48;Dbxref=Genbank:YP_001129400.1,GeneID:4961458;Name=YP_001129400.1;gbkey=CDS;gene=ORF48;locus_tag=HHV8GK18_gp48;product=ORF48;protein_id=YP_001129400.1
+NC_009333.1	RefSeq	gene	67444	70014	.	-	.	ID=gene-HHV8GK18_gp49;Dbxref=GeneID:4961475;Name=ORF47;gbkey=Gene;gene=ORF47;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp49
+NC_009333.1	RefSeq	CDS	69511	70014	.	-	0	ID=cds-YP_001129399.1;Parent=gene-HHV8GK18_gp49;Dbxref=Genbank:YP_001129399.1,GeneID:4961475;Name=YP_001129399.1;Note=herpesvirus core gene UL1 family;gbkey=CDS;gene=ORF47;locus_tag=HHV8GK18_gp49;product=ORF47;protein_id=YP_001129399.1
+NC_009333.1	RefSeq	gene	67444	69503	.	-	.	ID=gene-HHV8GK18_gp50;Dbxref=GeneID:4961472;Name=ORF46;gbkey=Gene;gene=ORF46;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp50
+NC_009333.1	RefSeq	CDS	68736	69503	.	-	0	ID=cds-YP_001129398.1;Parent=gene-HHV8GK18_gp50;Dbxref=Genbank:YP_001129398.1,GeneID:4961472;Name=YP_001129398.1;Note=herpesvirus core gene UL2 family;gbkey=CDS;gene=ORF46;locus_tag=HHV8GK18_gp50;product=ORF46;protein_id=YP_001129398.1
+NC_009333.1	RefSeq	gene	67444	68675	.	-	.	ID=gene-HHV8GK18_gp51;Dbxref=GeneID:4961474;Name=ORF45;gbkey=Gene;gene=ORF45;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp51
+NC_009333.1	RefSeq	CDS	67452	68675	.	-	0	ID=cds-YP_001129397.1;Parent=gene-HHV8GK18_gp51;Dbxref=Genbank:YP_001129397.1,GeneID:4961474;Name=YP_001129397.1;gbkey=CDS;gene=ORF45;locus_tag=HHV8GK18_gp51;product=ORF45;protein_id=YP_001129397.1
+NC_009333.1	RefSeq	polyA_signal_sequence	67444	67449	.	+	.	ID=id-NC_009333.1:67444..67449;Note=ORF45%2C ORF46%2C ORF47%2C ORF48;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	71695	76818	.	+	.	ID=gene-HHV8GK18_gp52;Dbxref=GeneID:4961526;Name=ORF50;gbkey=Gene;gene=ORF50;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp52
+NC_009333.1	RefSeq	CDS	71695	71712	.	+	0	ID=cds-YP_001129401.1;Parent=gene-HHV8GK18_gp52;Dbxref=Genbank:YP_001129401.1,GeneID:4961526;Name=YP_001129401.1;gbkey=CDS;gene=ORF50;locus_tag=HHV8GK18_gp52;product=ORF50;protein_id=YP_001129401.1
+NC_009333.1	RefSeq	CDS	72671	74728	.	+	0	ID=cds-YP_001129401.1;Parent=gene-HHV8GK18_gp52;Dbxref=Genbank:YP_001129401.1,GeneID:4961526;Name=YP_001129401.1;gbkey=CDS;gene=ORF50;locus_tag=HHV8GK18_gp52;product=ORF50;protein_id=YP_001129401.1
+NC_009333.1	RefSeq	gene	71728	72637	.	-	.	ID=gene-HHV8GK18_gp53;Dbxref=GeneID:4961448;Name=ORF49;gbkey=Gene;gene=ORF49;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp53
+NC_009333.1	RefSeq	CDS	71729	72637	.	-	0	ID=cds-YP_001129402.1;Parent=gene-HHV8GK18_gp53;Dbxref=Genbank:YP_001129402.1,GeneID:4961448;Name=YP_001129402.1;gbkey=CDS;gene=ORF49;locus_tag=HHV8GK18_gp53;product=ORF49;protein_id=YP_001129402.1
+NC_009333.1	RefSeq	polyA_signal_sequence	71728	71733	.	-	.	ID=id-HHV8GK18_gp53;Dbxref=GeneID:4961448;gbkey=regulatory;gene=ORF49;locus_tag=HHV8GK18_gp53;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	sequence_feature	74411	116152	.	+	.	ID=id-NC_009333.1:74411..116152;Note=insert in cos32;gbkey=misc_feature
+NC_009333.1	RefSeq	gene	74949	76818	.	+	.	ID=gene-HHV8GK18_gp54;Dbxref=GeneID:4961462;Name=K8;gbkey=Gene;gene=K8;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp54
+NC_009333.1	RefSeq	CDS	74949	75662	.	+	0	ID=cds-YP_001129403.1;Parent=gene-HHV8GK18_gp54;Dbxref=Genbank:YP_001129403.1,GeneID:4961462;Name=YP_001129403.1;gbkey=CDS;gene=K8;locus_tag=HHV8GK18_gp54;product=K8;protein_id=YP_001129403.1
+NC_009333.1	RefSeq	CDS	75744	75890	.	+	0	ID=cds-YP_001129403.1;Parent=gene-HHV8GK18_gp54;Dbxref=Genbank:YP_001129403.1,GeneID:4961462;Name=YP_001129403.1;gbkey=CDS;gene=K8;locus_tag=HHV8GK18_gp54;product=K8;protein_id=YP_001129403.1
+NC_009333.1	RefSeq	gene	76014	76818	.	+	.	ID=gene-HHV8GK18_gp55;Dbxref=GeneID:4961469;Name=K8.1;gbkey=Gene;gene=K8.1;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp55
+NC_009333.1	RefSeq	CDS	76014	76437	.	+	0	ID=cds-YP_001129404.1;Parent=gene-HHV8GK18_gp55;Dbxref=Genbank:YP_001129404.1,GeneID:4961469;Name=YP_001129404.1;gbkey=CDS;gene=K8.1;locus_tag=HHV8GK18_gp55;product=K8.1;protein_id=YP_001129404.1
+NC_009333.1	RefSeq	CDS	76532	76794	.	+	2	ID=cds-YP_001129404.1;Parent=gene-HHV8GK18_gp55;Dbxref=Genbank:YP_001129404.1,GeneID:4961469;Name=YP_001129404.1;gbkey=CDS;gene=K8.1;locus_tag=HHV8GK18_gp55;product=K8.1;protein_id=YP_001129404.1
+NC_009333.1	RefSeq	sequence_alteration	76723	76796	.	+	.	ID=id-HHV8GK18_gp55;Dbxref=GeneID:4961469;Note=74 bp deleted in cos19 and cos32%2C and also in the majority of DNA from the original biopsy%3B this disrupts the transmembrane anchor domain of the K8.1 protein%3B sequence shown as wild type (undeleted);gbkey=variation;gene=K8.1;locus_tag=HHV8GK18_gp55
+NC_009333.1	RefSeq	polyA_signal_sequence	76813	76818	.	+	.	ID=id-NC_009333.1:76813..76818;Note=ORF50%2C K8%2C K8.1;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	76823	77296	.	-	.	ID=gene-HHV8GK18_gp56;Dbxref=GeneID:4961496;Name=ORF52;gbkey=Gene;gene=ORF52;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp56
+NC_009333.1	RefSeq	CDS	76901	77296	.	-	0	ID=cds-YP_001129405.1;Parent=gene-HHV8GK18_gp56;Dbxref=Genbank:YP_001129405.1,GeneID:4961496;Name=YP_001129405.1;gbkey=CDS;gene=ORF52;locus_tag=HHV8GK18_gp56;product=ORF52;protein_id=YP_001129405.1
+NC_009333.1	RefSeq	polyA_signal_sequence	76823	76828	.	-	.	ID=id-HHV8GK18_gp56;Dbxref=GeneID:4961496;gbkey=regulatory;gene=ORF52;locus_tag=HHV8GK18_gp56;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	77377	77764	.	-	.	ID=gene-HHV8GK18_gp57;Dbxref=GeneID:4961468;Name=ORF53;gbkey=Gene;gene=ORF53;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp57
+NC_009333.1	RefSeq	CDS	77432	77764	.	-	0	ID=cds-YP_001129406.1;Parent=gene-HHV8GK18_gp57;Dbxref=Genbank:YP_001129406.1,GeneID:4961468;Name=YP_001129406.1;Note=herpesvirus core gene UL49A family;gbkey=CDS;gene=ORF53;locus_tag=HHV8GK18_gp57;product=ORF53;protein_id=YP_001129406.1
+NC_009333.1	RefSeq	polyA_signal_sequence	77377	77382	.	-	.	ID=id-HHV8GK18_gp57;Dbxref=GeneID:4961468;gbkey=regulatory;gene=ORF53;locus_tag=HHV8GK18_gp57;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	77835	78792	.	+	.	ID=gene-HHV8GK18_gp58;Dbxref=GeneID:4961459;Name=ORF54;gbkey=Gene;gene=ORF54;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp58
+NC_009333.1	RefSeq	CDS	77835	78722	.	+	0	ID=cds-YP_001129407.1;Parent=gene-HHV8GK18_gp58;Dbxref=Genbank:YP_001129407.1,GeneID:4961459;Name=YP_001129407.1;Note=herpesvirus core gene UL50 family;gbkey=CDS;gene=ORF54;locus_tag=HHV8GK18_gp58;product=ORF54;protein_id=YP_001129407.1
+NC_009333.1	RefSeq	polyA_signal_sequence	78787	78792	.	+	.	ID=id-HHV8GK18_gp58;Dbxref=GeneID:4961459;gbkey=regulatory;gene=ORF54;locus_tag=HHV8GK18_gp58;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	78818	79547	.	-	.	ID=gene-HHV8GK18_gp59;Dbxref=GeneID:4961432;Name=ORF55;gbkey=Gene;gene=ORF55;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp59
+NC_009333.1	RefSeq	CDS	78864	79547	.	-	0	ID=cds-YP_001129408.1;Parent=gene-HHV8GK18_gp59;Dbxref=Genbank:YP_001129408.1,GeneID:4961432;Name=YP_001129408.1;Note=herpesvirus core gene UL51 family;gbkey=CDS;gene=ORF55;locus_tag=HHV8GK18_gp59;product=ORF55;protein_id=YP_001129408.1
+NC_009333.1	RefSeq	polyA_signal_sequence	78818	78823	.	-	.	ID=id-HHV8GK18_gp59;Dbxref=GeneID:4961432;gbkey=regulatory;gene=ORF55;locus_tag=HHV8GK18_gp59;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	79535	83713	.	+	.	ID=gene-HHV8GK18_gp60;Dbxref=GeneID:4961445;Name=ORF56;gbkey=Gene;gene=ORF56;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp60
+NC_009333.1	RefSeq	CDS	79535	82066	.	+	0	ID=cds-YP_001129409.1;Parent=gene-HHV8GK18_gp60;Dbxref=Genbank:YP_001129409.1,GeneID:4961445;Name=YP_001129409.1;Note=herpesvirus core gene UL52 family;gbkey=CDS;gene=ORF56;locus_tag=HHV8GK18_gp60;product=ORF56;protein_id=YP_001129409.1
+NC_009333.1	RefSeq	gene	82169	83713	.	+	.	ID=gene-HHV8GK18_gp61;Dbxref=GeneID:4961525;Name=ORF57;gbkey=Gene;gene=ORF57;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp61
+NC_009333.1	RefSeq	CDS	82169	82217	.	+	0	ID=cds-YP_001129410.1;Parent=gene-HHV8GK18_gp61;Dbxref=Genbank:YP_001129410.1,GeneID:4961525;Name=YP_001129410.1;Note=herpesvirus core gene UL54 family;gbkey=CDS;gene=ORF57;locus_tag=HHV8GK18_gp61;product=ORF57;protein_id=YP_001129410.1
+NC_009333.1	RefSeq	CDS	82326	83644	.	+	2	ID=cds-YP_001129410.1;Parent=gene-HHV8GK18_gp61;Dbxref=Genbank:YP_001129410.1,GeneID:4961525;Name=YP_001129410.1;Note=herpesvirus core gene UL54 family;gbkey=CDS;gene=ORF57;locus_tag=HHV8GK18_gp61;product=ORF57;protein_id=YP_001129410.1
+NC_009333.1	RefSeq	polyA_signal_sequence	83708	83713	.	+	.	ID=id-NC_009333.1:83708..83713;Note=ORF56%2C ORF57;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	83887	85415	.	-	.	ID=gene-HHV8GK18_gp62;Dbxref=GeneID:4961464;Name=vIRF-1;gbkey=Gene;gene=vIRF-1;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp62
+NC_009333.1	RefSeq	mRNA	83887	85388	.	-	.	ID=rna-HHV8GK18_gp62;Parent=gene-HHV8GK18_gp62;Dbxref=GeneID:4961464;gbkey=mRNA;gene=vIRF-1;locus_tag=HHV8GK18_gp62
+NC_009333.1	RefSeq	exon	83887	85388	.	-	.	ID=exon-HHV8GK18_gp62-1;Parent=rna-HHV8GK18_gp62;Dbxref=GeneID:4961464;gbkey=mRNA;gene=vIRF-1;locus_tag=HHV8GK18_gp62
+NC_009333.1	RefSeq	CDS	83960	85309	.	-	0	ID=cds-YP_001129411.1;Parent=rna-HHV8GK18_gp62;Dbxref=Genbank:YP_001129411.1,GeneID:4961464;Name=YP_001129411.1;gbkey=CDS;gene=vIRF-1;locus_tag=HHV8GK18_gp62;product=K9;protein_id=YP_001129411.1
+NC_009333.1	RefSeq	polyA_site	83887	83887	.	-	.	ID=id-HHV8GK18_gp62;Dbxref=GeneID:4961464;gbkey=polyA_site;gene=vIRF-1;locus_tag=HHV8GK18_gp62
+NC_009333.1	RefSeq	polyA_signal_sequence	83903	83908	.	-	.	ID=id-HHV8GK18_gp62-2;Dbxref=GeneID:4961464;gbkey=regulatory;gene=vIRF-1;locus_tag=HHV8GK18_gp62;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	TATA_box	85410	85415	.	-	.	ID=id-HHV8GK18_gp62-3;Dbxref=GeneID:4961464;gbkey=regulatory;gene=vIRF-1;locus_tag=HHV8GK18_gp62;regulatory_class=TATA_box
+NC_009333.1	RefSeq	gene	86106	89172	.	-	.	ID=gene-HHV8GK18_gp63;Dbxref=GeneID:4961495;Name=vIRF-4;gbkey=Gene;gene=vIRF-4;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp63
+NC_009333.1	RefSeq	mRNA	86106	89142	.	-	.	ID=rna-HHV8GK18_gp63;Parent=gene-HHV8GK18_gp63;Dbxref=GeneID:4961495;gbkey=mRNA;gene=vIRF-4;locus_tag=HHV8GK18_gp63
+NC_009333.1	RefSeq	exon	88544	89142	.	-	.	ID=exon-HHV8GK18_gp63-1;Parent=rna-HHV8GK18_gp63;Dbxref=GeneID:4961495;gbkey=mRNA;gene=vIRF-4;locus_tag=HHV8GK18_gp63
+NC_009333.1	RefSeq	exon	86106	88442	.	-	.	ID=exon-HHV8GK18_gp63-2;Parent=rna-HHV8GK18_gp63;Dbxref=GeneID:4961495;gbkey=mRNA;gene=vIRF-4;locus_tag=HHV8GK18_gp63
+NC_009333.1	RefSeq	mRNA	86106	89040	.	-	.	ID=rna-HHV8GK18_gp63-2;Parent=gene-HHV8GK18_gp63;Dbxref=GeneID:4961495;gbkey=mRNA;gene=vIRF-4;locus_tag=HHV8GK18_gp63
+NC_009333.1	RefSeq	exon	88544	89040	.	-	.	ID=exon-HHV8GK18_gp63-2-1;Parent=rna-HHV8GK18_gp63-2;Dbxref=GeneID:4961495;gbkey=mRNA;gene=vIRF-4;locus_tag=HHV8GK18_gp63
+NC_009333.1	RefSeq	exon	86106	88442	.	-	.	ID=exon-HHV8GK18_gp63-2-2;Parent=rna-HHV8GK18_gp63-2;Dbxref=GeneID:4961495;gbkey=mRNA;gene=vIRF-4;locus_tag=HHV8GK18_gp63
+NC_009333.1	RefSeq	CDS	88544	89010	.	-	0	ID=cds-YP_001129412.1;Parent=rna-HHV8GK18_gp63-2;Dbxref=Genbank:YP_001129412.1,GeneID:4961495;Name=YP_001129412.1;gbkey=CDS;gene=vIRF-4;locus_tag=HHV8GK18_gp63;product=vIRF-4;protein_id=YP_001129412.1
+NC_009333.1	RefSeq	CDS	86174	88442	.	-	1	ID=cds-YP_001129412.1;Parent=rna-HHV8GK18_gp63-2;Dbxref=Genbank:YP_001129412.1,GeneID:4961495;Name=YP_001129412.1;gbkey=CDS;gene=vIRF-4;locus_tag=HHV8GK18_gp63;product=vIRF-4;protein_id=YP_001129412.1
+NC_009333.1	RefSeq	polyA_site	86106	86106	.	-	.	ID=id-HHV8GK18_gp63;Dbxref=GeneID:4961495;gbkey=polyA_site;gene=vIRF-4;locus_tag=HHV8GK18_gp63
+NC_009333.1	RefSeq	polyA_signal_sequence	86125	86130	.	-	.	ID=id-HHV8GK18_gp63-2;Dbxref=GeneID:4961495;gbkey=regulatory;gene=vIRF-4;locus_tag=HHV8GK18_gp63;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	TATA_box	89066	89071	.	-	.	ID=id-HHV8GK18_gp63-3;Dbxref=GeneID:4961495;gbkey=regulatory;gene=vIRF-4;locus_tag=HHV8GK18_gp63;regulatory_class=TATA_box
+NC_009333.1	RefSeq	TATA_box	89167	89172	.	-	.	ID=id-HHV8GK18_gp63-4;Dbxref=GeneID:4961495;gbkey=regulatory;gene=vIRF-4;locus_tag=HHV8GK18_gp63;regulatory_class=TATA_box
+NC_009333.1	RefSeq	gene	89473	91512	.	-	.	ID=gene-HHV8GK18_gp64;Dbxref=GeneID:4961493;Name=vIRF-3;gbkey=Gene;gene=vIRF-3;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp64
+NC_009333.1	RefSeq	mRNA	89473	91512	.	-	.	ID=rna-HHV8GK18_gp64;Parent=gene-HHV8GK18_gp64;Dbxref=GeneID:4961493;gbkey=mRNA;gene=vIRF-3;locus_tag=HHV8GK18_gp64
+NC_009333.1	RefSeq	exon	91042	91512	.	-	.	ID=exon-HHV8GK18_gp64-1;Parent=rna-HHV8GK18_gp64;Dbxref=GeneID:4961493;gbkey=mRNA;gene=vIRF-3;locus_tag=HHV8GK18_gp64
+NC_009333.1	RefSeq	exon	89473	90945	.	-	.	ID=exon-HHV8GK18_gp64-2;Parent=rna-HHV8GK18_gp64;Dbxref=GeneID:4961493;gbkey=mRNA;gene=vIRF-3;locus_tag=HHV8GK18_gp64
+NC_009333.1	RefSeq	CDS	91042	91496	.	-	0	ID=cds-YP_001129413.1;Parent=rna-HHV8GK18_gp64;Dbxref=Genbank:YP_001129413.1,GeneID:4961493;Name=YP_001129413.1;gbkey=CDS;gene=vIRF-3;locus_tag=HHV8GK18_gp64;product=vIRF-3;protein_id=YP_001129413.1
+NC_009333.1	RefSeq	CDS	89700	90945	.	-	1	ID=cds-YP_001129413.1;Parent=rna-HHV8GK18_gp64;Dbxref=Genbank:YP_001129413.1,GeneID:4961493;Name=YP_001129413.1;gbkey=CDS;gene=vIRF-3;locus_tag=HHV8GK18_gp64;product=vIRF-3;protein_id=YP_001129413.1
+NC_009333.1	RefSeq	polyA_site	89473	89473	.	-	.	ID=id-HHV8GK18_gp64;Dbxref=GeneID:4961493;gbkey=polyA_site;gene=vIRF-3;locus_tag=HHV8GK18_gp64
+NC_009333.1	RefSeq	polyA_signal_sequence	89487	89492	.	-	.	ID=id-HHV8GK18_gp64-2;Dbxref=GeneID:4961493;gbkey=regulatory;gene=vIRF-3;locus_tag=HHV8GK18_gp64;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	91853	94353	.	-	.	ID=gene-HHV8GK18_gp65;Dbxref=GeneID:4961491;Name=vIRF-2;gbkey=Gene;gene=vIRF-2;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp65
+NC_009333.1	RefSeq	mRNA	91853	94325	.	-	.	ID=rna-HHV8GK18_gp65;Parent=gene-HHV8GK18_gp65;Dbxref=GeneID:4961491;gbkey=mRNA;gene=vIRF-2;locus_tag=HHV8GK18_gp65
+NC_009333.1	RefSeq	exon	93742	94325	.	-	.	ID=exon-HHV8GK18_gp65-1;Parent=rna-HHV8GK18_gp65;Dbxref=GeneID:4961491;gbkey=mRNA;gene=vIRF-2;locus_tag=HHV8GK18_gp65
+NC_009333.1	RefSeq	exon	91853	93620	.	-	.	ID=exon-HHV8GK18_gp65-2;Parent=rna-HHV8GK18_gp65;Dbxref=GeneID:4961491;gbkey=mRNA;gene=vIRF-2;locus_tag=HHV8GK18_gp65
+NC_009333.1	RefSeq	CDS	93742	94229	.	-	0	ID=cds-YP_001129414.1;Parent=rna-HHV8GK18_gp65;Dbxref=Genbank:YP_001129414.1,GeneID:4961491;Name=YP_001129414.1;gbkey=CDS;gene=vIRF-2;locus_tag=HHV8GK18_gp65;product=vIRF-2;protein_id=YP_001129414.1
+NC_009333.1	RefSeq	CDS	92066	93620	.	-	1	ID=cds-YP_001129414.1;Parent=rna-HHV8GK18_gp65;Dbxref=Genbank:YP_001129414.1,GeneID:4961491;Name=YP_001129414.1;gbkey=CDS;gene=vIRF-2;locus_tag=HHV8GK18_gp65;product=vIRF-2;protein_id=YP_001129414.1
+NC_009333.1	RefSeq	polyA_site	91853	91853	.	-	.	ID=id-HHV8GK18_gp65;Dbxref=GeneID:4961491;gbkey=polyA_site;gene=vIRF-2;locus_tag=HHV8GK18_gp65
+NC_009333.1	RefSeq	polyA_signal_sequence	91881	91886	.	-	.	ID=id-HHV8GK18_gp65-2;Dbxref=GeneID:4961491;gbkey=regulatory;gene=vIRF-2;locus_tag=HHV8GK18_gp65;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	TATA_box	94348	94353	.	-	.	ID=id-HHV8GK18_gp65-3;Dbxref=GeneID:4961491;gbkey=regulatory;gene=vIRF-2;locus_tag=HHV8GK18_gp65;regulatory_class=TATA_box
+NC_009333.1	RefSeq	direct_repeat	92780	93127	.	+	.	ID=id-NC_009333.1:92780..93127;gbkey=repeat_region;rpt_family=DR4;rpt_type=direct
+NC_009333.1	RefSeq	gene	94557	100300	.	-	.	ID=gene-HHV8GK18_gp66;Dbxref=GeneID:4961490;Name=ORF61;gbkey=Gene;gene=ORF61;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp66
+NC_009333.1	RefSeq	CDS	97922	100300	.	-	0	ID=cds-YP_001129418.1;Parent=gene-HHV8GK18_gp66;Dbxref=Genbank:YP_001129418.1,GeneID:4961490;Name=YP_001129418.1;Note=herpesvirus core gene UL39 family;gbkey=CDS;gene=ORF61;locus_tag=HHV8GK18_gp66;product=ORF61;protein_id=YP_001129418.1
+NC_009333.1	RefSeq	gene	94557	97893	.	-	.	ID=gene-HHV8GK18_gp67;Dbxref=GeneID:4961455;Name=ORF60;gbkey=Gene;gene=ORF60;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp67
+NC_009333.1	RefSeq	CDS	96976	97893	.	-	0	ID=cds-YP_001129417.1;Parent=gene-HHV8GK18_gp67;Dbxref=Genbank:YP_001129417.1,GeneID:4961455;Name=YP_001129417.1;Note=herpesvirus core gene UL40 family;gbkey=CDS;gene=ORF60;locus_tag=HHV8GK18_gp67;product=ORF60;protein_id=YP_001129417.1
+NC_009333.1	RefSeq	gene	94557	95650	.	-	.	ID=gene-HHV8GK18_gp68;Dbxref=GeneID:4961480;Name=ORF58;gbkey=Gene;gene=ORF58;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp68
+NC_009333.1	RefSeq	CDS	94577	95650	.	-	0	ID=cds-YP_001129415.1;Parent=gene-HHV8GK18_gp68;Dbxref=Genbank:YP_001129415.1,GeneID:4961480;Name=YP_001129415.1;Note=herpesvirus core gene UL43 family;gbkey=CDS;gene=ORF58;locus_tag=HHV8GK18_gp68;product=ORF58;protein_id=YP_001129415.1
+NC_009333.1	RefSeq	gene	94577	101300	.	-	.	ID=gene-HHV8GK18_gp69;Dbxref=GeneID:4961461;Name=ORF62;gbkey=Gene;gene=ORF62;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp69
+NC_009333.1	RefSeq	CDS	100305	101300	.	-	0	ID=cds-YP_001129419.1;Parent=gene-HHV8GK18_gp69;Dbxref=Genbank:YP_001129419.1,GeneID:4961461;Name=YP_001129419.1;Note=herpesvirus core gene UL38 family;gbkey=CDS;gene=ORF62;locus_tag=HHV8GK18_gp69;product=ORF62;protein_id=YP_001129419.1
+NC_009333.1	RefSeq	gene	94577	96845	.	-	.	ID=gene-HHV8GK18_gp70;Dbxref=GeneID:4961492;Name=ORF59;gbkey=Gene;gene=ORF59;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp70
+NC_009333.1	RefSeq	CDS	95655	96845	.	-	0	ID=cds-YP_001129416.1;Parent=gene-HHV8GK18_gp70;Dbxref=Genbank:YP_001129416.1,GeneID:4961492;Name=YP_001129416.1;Note=herpesvirus core gene UL42 family;gbkey=CDS;gene=ORF59;locus_tag=HHV8GK18_gp70;product=ORF59;protein_id=YP_001129416.1
+NC_009333.1	RefSeq	polyA_signal_sequence	94584	94589	.	-	.	ID=id-NC_009333.1:94584..94589;Note=ORF58%2C ORF59%2C ORF60%2C ORF61%2C ORF62;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	101314	112013	.	+	.	ID=gene-HHV8GK18_gp71;Dbxref=GeneID:4961466;Name=ORF63;gbkey=Gene;gene=ORF63;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp71
+NC_009333.1	RefSeq	CDS	101314	104100	.	+	0	ID=cds-YP_001129420.1;Parent=gene-HHV8GK18_gp71;Dbxref=Genbank:YP_001129420.1,GeneID:4961466;Name=YP_001129420.1;Note=herpesvirus core gene UL37 family;gbkey=CDS;gene=ORF63;locus_tag=HHV8GK18_gp71;product=ORF63;protein_id=YP_001129420.1
+NC_009333.1	RefSeq	gene	104106	112013	.	+	.	ID=gene-HHV8GK18_gp72;Dbxref=GeneID:4961441;Name=ORF64;gbkey=Gene;gene=ORF64;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp72
+NC_009333.1	RefSeq	CDS	104106	112013	.	+	0	ID=cds-YP_001129421.1;Parent=gene-HHV8GK18_gp72;Dbxref=Genbank:YP_001129421.1,GeneID:4961441;Name=YP_001129421.1;Note=herpesvirus core gene UL36 family;gbkey=CDS;gene=ORF64;locus_tag=HHV8GK18_gp72;product=ORF64;protein_id=YP_001129421.1
+NC_009333.1	RefSeq	gene	111927	114911	.	-	.	ID=gene-HHV8GK18_gp73;Dbxref=GeneID:4961467;Name=ORF67A;gbkey=Gene;gene=ORF67A;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp73
+NC_009333.1	RefSeq	CDS	114669	114911	.	-	0	ID=cds-YP_001129425.1;Parent=gene-HHV8GK18_gp73;Dbxref=Genbank:YP_001129425.1,GeneID:4961467;Name=YP_001129425.1;Note=herpesvirus core gene UL33 family;gbkey=CDS;gene=ORF67A;locus_tag=HHV8GK18_gp73;product=ORF67A;protein_id=YP_001129425.1
+NC_009333.1	RefSeq	gene	111927	114614	.	-	.	ID=gene-HHV8GK18_gp74;Dbxref=GeneID:4961524;Name=ORF67;gbkey=Gene;gene=ORF67;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp74
+NC_009333.1	RefSeq	CDS	113799	114614	.	-	0	ID=cds-YP_001129424.1;Parent=gene-HHV8GK18_gp74;Dbxref=Genbank:YP_001129424.1,GeneID:4961524;Name=YP_001129424.1;Note=herpesvirus core gene UL34 family;gbkey=CDS;gene=ORF67;locus_tag=HHV8GK18_gp74;product=ORF67;protein_id=YP_001129424.1
+NC_009333.1	RefSeq	gene	111927	113865	.	-	.	ID=gene-HHV8GK18_gp75;Dbxref=GeneID:4961523;Name=ORF66;gbkey=Gene;gene=ORF66;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp75
+NC_009333.1	RefSeq	CDS	112576	113865	.	-	0	ID=cds-YP_001129423.1;Parent=gene-HHV8GK18_gp75;Dbxref=Genbank:YP_001129423.1,GeneID:4961523;Name=YP_001129423.1;Note=related to HHV-5 UL49;gbkey=CDS;gene=ORF66;locus_tag=HHV8GK18_gp75;product=ORF66;protein_id=YP_001129423.1
+NC_009333.1	RefSeq	gene	111927	112549	.	-	.	ID=gene-HHV8GK18_gp76;Dbxref=GeneID:4961451;Name=ORF65;gbkey=Gene;gene=ORF65;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp76
+NC_009333.1	RefSeq	CDS	112037	112549	.	-	0	ID=cds-YP_001129422.1;Parent=gene-HHV8GK18_gp76;Dbxref=Genbank:YP_001129422.1,GeneID:4961451;Name=YP_001129422.1;Note=herpesvirus core gene UL35 family;gbkey=CDS;gene=ORF65;locus_tag=HHV8GK18_gp76;product=ORF65;protein_id=YP_001129422.1
+NC_009333.1	RefSeq	polyA_signal_sequence	111927	111932	.	-	.	ID=id-NC_009333.1:111927..111932;Note=ORF65%2C ORF66%2C ORF67%2C ORF67A;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	polyA_signal_sequence	111992	111997	.	+	.	ID=id-NC_009333.1:111992..111997;Note=ORF63%2C ORF64;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	115108	117514	.	+	.	ID=gene-HHV8GK18_gp77;Dbxref=GeneID:4961470;Name=HHV8GK18_gp77;description=ORF68;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp77
+NC_009333.1	RefSeq	CDS	115108	116511	.	+	0	ID=cds-YP_001129426.1;Parent=gene-HHV8GK18_gp77;Dbxref=Genbank:YP_001129426.1,GeneID:4961470;Name=YP_001129426.1;Note=herpesvirus core gene UL32 family;gbkey=CDS;locus_tag=HHV8GK18_gp77;product=ORF68;protein_id=YP_001129426.1
+NC_009333.1	RefSeq	sequence_feature	115410	137969	.	+	.	ID=id-NC_009333.1:115410..137969;Note=insert in cos83%3B contains copies of TR at right end;gbkey=misc_feature
+NC_009333.1	RefSeq	gene	116544	117514	.	+	.	ID=gene-HHV8GK18_gp78;Dbxref=GeneID:4961444;Name=HHV8GK18_gp78;description=ORF69;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp78
+NC_009333.1	RefSeq	CDS	116544	117452	.	+	0	ID=cds-YP_001129427.1;Parent=gene-HHV8GK18_gp78;Dbxref=Genbank:YP_001129427.1,GeneID:4961444;Name=YP_001129427.1;Note=herpesvirus core gene UL31 family;gbkey=CDS;locus_tag=HHV8GK18_gp78;product=ORF69;protein_id=YP_001129427.1
+NC_009333.1	RefSeq	polyA_signal_sequence	117509	117514	.	+	.	ID=id-NC_009333.1:117509..117514;Note=ORF68%2C ORF69;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	117535	118233	.	-	.	ID=gene-HHV8GK18_gp79;Dbxref=GeneID:4961446;Name=HHV8GK18_gp79;Note=other proteins may be produced from this region (kaposin B and C)%3B kaposin B increases expression of certain cytokines;description=K12;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp79
+NC_009333.1	RefSeq	CDS	118025	118207	.	-	0	ID=cds-YP_001129428.1;Parent=gene-HHV8GK18_gp79;Dbxref=Genbank:YP_001129428.1,GeneID:4961446;Name=YP_001129428.1;gbkey=CDS;locus_tag=HHV8GK18_gp79;product=K12;protein_id=YP_001129428.1
+NC_009333.1	RefSeq	transcript	117535	118233	.	-	.	ID=rna-HHV8GK18_gp79;Parent=gene-HHV8GK18_gp79;Dbxref=GeneID:4961446;gbkey=misc_RNA;locus_tag=HHV8GK18_gp79;product=T0.7
+NC_009333.1	RefSeq	exon	117535	118233	.	-	.	ID=exon-HHV8GK18_gp79-1;Parent=rna-HHV8GK18_gp79;Dbxref=GeneID:4961446;gbkey=misc_RNA;locus_tag=HHV8GK18_gp79;product=T0.7
+NC_009333.1	RefSeq	polyA_signal_sequence	117548	117553	.	-	.	ID=id-HHV8GK18_gp79;Dbxref=GeneID:4961446;gbkey=regulatory;locus_tag=HHV8GK18_gp79;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	transcript	118075	118097	.	-	.	ID=rna-NC_009333.1:118075..118097;gbkey=misc_RNA;product=miR-K10
+NC_009333.1	RefSeq	exon	118075	118097	.	-	.	ID=exon-NC_009333.1:118075..118097-1;Parent=rna-NC_009333.1:118075..118097;gbkey=misc_RNA;product=miR-K10
+NC_009333.1	RefSeq	direct_repeat	118229	118490	.	+	.	ID=id-NC_009333.1:118229..118490;gbkey=repeat_region;rpt_family=DR5;rpt_type=direct
+NC_009333.1	RefSeq	direct_repeat	118491	118845	.	+	.	ID=id-NC_009333.1:118491..118845;gbkey=repeat_region;rpt_family=DR6;rpt_type=direct
+NC_009333.1	RefSeq	inverted_repeat	118948	120125	.	+	.	ID=id-NC_009333.1:118948..120125;gbkey=repeat_region;rpt_family=LIR1;rpt_type=inverted
+NC_009333.1	RefSeq	gene	119586	119607	.	-	.	ID=gene-HHV8_gs02;Dbxref=GeneID:4961463;Name=HHV8_gs02;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs02
+NC_009333.1	RefSeq	transcript	119586	119607	.	-	.	ID=rna-HHV8_gs02;Parent=gene-HHV8_gs02;Dbxref=GeneID:4961463;gbkey=misc_RNA;locus_tag=HHV8_gs02;product=miR-K9
+NC_009333.1	RefSeq	exon	119586	119607	.	-	.	ID=exon-HHV8_gs02-1;Parent=rna-HHV8_gs02;Dbxref=GeneID:4961463;gbkey=misc_RNA;locus_tag=HHV8_gs02;product=miR-K9
+NC_009333.1	RefSeq	gene	120234	120253	.	-	.	ID=gene-HHV8_gs03;Dbxref=GeneID:4961520;Name=HHV8_gs03;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs03
+NC_009333.1	RefSeq	transcript	120234	120253	.	-	.	ID=rna-HHV8_gs03;Parent=gene-HHV8_gs03;Dbxref=GeneID:4961520;gbkey=misc_RNA;locus_tag=HHV8_gs03;product=miR-K8
+NC_009333.1	RefSeq	exon	120234	120253	.	-	.	ID=exon-HHV8_gs03-1;Parent=rna-HHV8_gs03;Dbxref=GeneID:4961520;gbkey=misc_RNA;locus_tag=HHV8_gs03;product=miR-K8
+NC_009333.1	RefSeq	gene	120605	120627	.	-	.	ID=gene-HHV8_gs04;Dbxref=GeneID:4961517;Name=HHV8_gs04;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs04
+NC_009333.1	RefSeq	transcript	120605	120627	.	-	.	ID=rna-HHV8_gs04;Parent=gene-HHV8_gs04;Dbxref=GeneID:4961517;gbkey=misc_RNA;locus_tag=HHV8_gs04;product=miR-K7
+NC_009333.1	RefSeq	exon	120605	120627	.	-	.	ID=exon-HHV8_gs04-1;Parent=rna-HHV8_gs04;Dbxref=GeneID:4961517;gbkey=misc_RNA;locus_tag=HHV8_gs04;product=miR-K7
+NC_009333.1	RefSeq	gene	121044	121065	.	-	.	ID=gene-HHV8_gs05;Dbxref=GeneID:4961518;Name=HHV8_gs05;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs05
+NC_009333.1	RefSeq	transcript	121044	121065	.	-	.	ID=rna-HHV8_gs05;Parent=gene-HHV8_gs05;Dbxref=GeneID:4961518;gbkey=misc_RNA;locus_tag=HHV8_gs05;product=miR-K6
+NC_009333.1	RefSeq	exon	121044	121065	.	-	.	ID=exon-HHV8_gs05-1;Parent=rna-HHV8_gs05;Dbxref=GeneID:4961518;gbkey=misc_RNA;locus_tag=HHV8_gs05;product=miR-K6
+NC_009333.1	RefSeq	gene	121514	121535	.	-	.	ID=gene-HHV8_gs06;Dbxref=GeneID:4961522;Name=HHV8_gs06;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs06
+NC_009333.1	RefSeq	transcript	121514	121535	.	-	.	ID=rna-HHV8_gs06;Parent=gene-HHV8_gs06;Dbxref=GeneID:4961522;gbkey=misc_RNA;locus_tag=HHV8_gs06;product=miR-K5
+NC_009333.1	RefSeq	exon	121514	121535	.	-	.	ID=exon-HHV8_gs06-1;Parent=rna-HHV8_gs06;Dbxref=GeneID:4961522;gbkey=misc_RNA;locus_tag=HHV8_gs06;product=miR-K5
+NC_009333.1	RefSeq	gene	121703	121724	.	-	.	ID=gene-HHV8_gs07;Dbxref=GeneID:4961519;Name=HHV8_gs07;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs07
+NC_009333.1	RefSeq	transcript	121703	121724	.	-	.	ID=rna-HHV8_gs07;Parent=gene-HHV8_gs07;Dbxref=GeneID:4961519;gbkey=misc_RNA;locus_tag=HHV8_gs07;product=miR-K4
+NC_009333.1	RefSeq	exon	121703	121724	.	-	.	ID=exon-HHV8_gs07-1;Parent=rna-HHV8_gs07;Dbxref=GeneID:4961519;gbkey=misc_RNA;locus_tag=HHV8_gs07;product=miR-K4
+NC_009333.1	RefSeq	gene	121834	121856	.	-	.	ID=gene-HHV8_gs08;Dbxref=GeneID:4961516;Name=HHV8_gs08;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs08
+NC_009333.1	RefSeq	transcript	121834	121856	.	-	.	ID=rna-HHV8_gs08;Parent=gene-HHV8_gs08;Dbxref=GeneID:4961516;gbkey=misc_RNA;locus_tag=HHV8_gs08;product=miR-K3
+NC_009333.1	RefSeq	exon	121834	121856	.	-	.	ID=exon-HHV8_gs08-1;Parent=rna-HHV8_gs08;Dbxref=GeneID:4961516;gbkey=misc_RNA;locus_tag=HHV8_gs08;product=miR-K3
+NC_009333.1	RefSeq	gene	121977	121998	.	-	.	ID=gene-HHV8_gs09;Dbxref=GeneID:4961515;Name=HHV8_gs09;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs09
+NC_009333.1	RefSeq	transcript	121977	121998	.	-	.	ID=rna-HHV8_gs09;Parent=gene-HHV8_gs09;Dbxref=GeneID:4961515;gbkey=misc_RNA;locus_tag=HHV8_gs09;product=miR-K2
+NC_009333.1	RefSeq	exon	121977	121998	.	-	.	ID=exon-HHV8_gs09-1;Parent=rna-HHV8_gs09;Dbxref=GeneID:4961515;gbkey=misc_RNA;locus_tag=HHV8_gs09;product=miR-K2
+NC_009333.1	RefSeq	gene	122137	122159	.	-	.	ID=gene-HHV8_gs10;Dbxref=GeneID:4961453;Name=HHV8_gs10;gbkey=Gene;gene_biotype=misc_RNA;locus_tag=HHV8_gs10
+NC_009333.1	RefSeq	transcript	122137	122159	.	-	.	ID=rna-HHV8_gs10;Parent=gene-HHV8_gs10;Dbxref=GeneID:4961453;gbkey=misc_RNA;locus_tag=HHV8_gs10;product=miR-K1
+NC_009333.1	RefSeq	exon	122137	122159	.	-	.	ID=exon-HHV8_gs10-1;Parent=rna-HHV8_gs10;Dbxref=GeneID:4961453;gbkey=misc_RNA;locus_tag=HHV8_gs10;product=miR-K1
+NC_009333.1	RefSeq	gene	122337	122959	.	-	.	ID=gene-HHV8GK18_gp80;Dbxref=GeneID:4961494;Name=HHV8GK18_gp80;description=ORF71;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp80
+NC_009333.1	RefSeq	CDS	122393	122959	.	-	0	ID=cds-YP_001129429.1;Parent=gene-HHV8GK18_gp80;Dbxref=Genbank:YP_001129429.1,GeneID:4961494;Name=YP_001129429.1;Note=contains two death effector domains;gbkey=CDS;locus_tag=HHV8GK18_gp80;product=K13;protein_id=YP_001129429.1
+NC_009333.1	RefSeq	polyA_signal_sequence	122337	122342	.	-	.	ID=id-HHV8GK18_gp80;Dbxref=GeneID:4961494;Note=ORF71;gbkey=regulatory;locus_tag=HHV8GK18_gp80;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	123010	127446	.	-	.	ID=gene-HHV8GK18_gp81;Dbxref=GeneID:4961527;Name=HHV8GK18_gp81;description=ORF73;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp81
+NC_009333.1	RefSeq	CDS	124057	127446	.	-	0	ID=cds-YP_001129431.1;Parent=gene-HHV8GK18_gp81;Dbxref=Genbank:YP_001129431.1,GeneID:4961527;Name=YP_001129431.1;Note=component of latency-associated nuclear antigen%3B LANA;gbkey=CDS;locus_tag=HHV8GK18_gp81;product=LANA;protein_id=YP_001129431.1
+NC_009333.1	RefSeq	direct_repeat	124784	126456	.	-	.	ID=id-HHV8GK18_gp81;Dbxref=GeneID:4961527;Note=complex array of repeats;gbkey=repeat_region;locus_tag=HHV8GK18_gp81;rpt_family=DR7;rpt_type=direct
+NC_009333.1	RefSeq	gene	123010	123815	.	-	.	ID=gene-HHV8GK18_gp82;Dbxref=GeneID:4961471;Name=HHV8GK18_gp82;description=ORF72;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp82
+NC_009333.1	RefSeq	CDS	123042	123815	.	-	0	ID=cds-YP_001129430.1;Parent=gene-HHV8GK18_gp82;Dbxref=Genbank:YP_001129430.1,GeneID:4961471;Name=YP_001129430.1;Note=contains two cyclin-like domains;gbkey=CDS;locus_tag=HHV8GK18_gp82;product=ORF72;protein_id=YP_001129430.1
+NC_009333.1	RefSeq	polyA_signal_sequence	123010	123015	.	-	.	ID=id-NC_009333.1:123010..123015;Note=ORF72%2C ORF73;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	gene	127966	130671	.	+	.	ID=gene-HHV8GK18_gp83;Dbxref=GeneID:4961465;Name=HHV8GK18_gp83;description=K14;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp83
+NC_009333.1	RefSeq	CDS	128264	129079	.	+	0	ID=cds-YP_001129432.1;Parent=gene-HHV8GK18_gp83;Dbxref=Genbank:YP_001129432.1,GeneID:4961465;Name=YP_001129432.1;Note=contains two Ig domains;gbkey=CDS;locus_tag=HHV8GK18_gp83;product=K14;protein_id=YP_001129432.1
+NC_009333.1	RefSeq	TATA_box	127966	127971	.	+	.	ID=id-HHV8GK18_gp83;Dbxref=GeneID:4961465;gbkey=regulatory;locus_tag=HHV8GK18_gp83;regulatory_class=TATA_box
+NC_009333.1	RefSeq	mRNA	127997	130671	.	+	.	ID=rna-NC_009333.1:127997..130671;Note=K14%2C ORF74%3B polyA_site not reported;gbkey=mRNA
+NC_009333.1	RefSeq	exon	127997	129368	.	+	.	ID=exon-NC_009333.1:127997..130671-1;Parent=rna-NC_009333.1:127997..130671;Note=K14%2C ORF74%3B polyA_site not reported;gbkey=mRNA
+NC_009333.1	RefSeq	exon	129517	130671	.	+	.	ID=exon-NC_009333.1:127997..130671-2;Parent=rna-NC_009333.1:127997..130671;Note=K14%2C ORF74%3B polyA_site not reported;gbkey=mRNA
+NC_009333.1	RefSeq	gene	129520	130671	.	+	.	ID=gene-HHV8GK18_gp84;Dbxref=GeneID:4961460;Name=HHV8GK18_gp84;description=ORF74;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp84
+NC_009333.1	RefSeq	CDS	129520	130548	.	+	0	ID=cds-YP_001129433.1;Parent=gene-HHV8GK18_gp84;Dbxref=Genbank:YP_001129433.1,GeneID:4961460;Name=YP_001129433.1;Note=similar to IL-8 receptor%3B transforming protein;gbkey=CDS;locus_tag=HHV8GK18_gp84;product=ORF74;protein_id=YP_001129433.1
+NC_009333.1	RefSeq	gene	130655	136899	.	-	.	ID=gene-HHV8GK18_gp85;Dbxref=GeneID:4961473;Name=K15;gbkey=Gene;gene=K15;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp85
+NC_009333.1	RefSeq	CDS	136683	136899	.	-	0	ID=cds-YP_001129435.1;Parent=gene-HHV8GK18_gp85;Dbxref=Genbank:YP_001129435.1,GeneID:4961473;Name=YP_001129435.1;gbkey=CDS;gene=K15;locus_tag=HHV8GK18_gp85;product=K15;protein_id=YP_001129435.1
+NC_009333.1	RefSeq	CDS	136481	136573	.	-	2	ID=cds-YP_001129435.1;Parent=gene-HHV8GK18_gp85;Dbxref=Genbank:YP_001129435.1,GeneID:4961473;Name=YP_001129435.1;gbkey=CDS;gene=K15;locus_tag=HHV8GK18_gp85;product=K15;protein_id=YP_001129435.1
+NC_009333.1	RefSeq	CDS	136155	136397	.	-	2	ID=cds-YP_001129435.1;Parent=gene-HHV8GK18_gp85;Dbxref=Genbank:YP_001129435.1,GeneID:4961473;Name=YP_001129435.1;gbkey=CDS;gene=K15;locus_tag=HHV8GK18_gp85;product=K15;protein_id=YP_001129435.1
+NC_009333.1	RefSeq	CDS	135977	136066	.	-	2	ID=cds-YP_001129435.1;Parent=gene-HHV8GK18_gp85;Dbxref=Genbank:YP_001129435.1,GeneID:4961473;Name=YP_001129435.1;gbkey=CDS;gene=K15;locus_tag=HHV8GK18_gp85;product=K15;protein_id=YP_001129435.1
+NC_009333.1	RefSeq	CDS	135747	135899	.	-	2	ID=cds-YP_001129435.1;Parent=gene-HHV8GK18_gp85;Dbxref=Genbank:YP_001129435.1,GeneID:4961473;Name=YP_001129435.1;gbkey=CDS;gene=K15;locus_tag=HHV8GK18_gp85;product=K15;protein_id=YP_001129435.1
+NC_009333.1	RefSeq	CDS	135557	135664	.	-	2	ID=cds-YP_001129435.1;Parent=gene-HHV8GK18_gp85;Dbxref=Genbank:YP_001129435.1,GeneID:4961473;Name=YP_001129435.1;gbkey=CDS;gene=K15;locus_tag=HHV8GK18_gp85;product=K15;protein_id=YP_001129435.1
+NC_009333.1	RefSeq	CDS	135373	135474	.	-	2	ID=cds-YP_001129435.1;Parent=gene-HHV8GK18_gp85;Dbxref=Genbank:YP_001129435.1,GeneID:4961473;Name=YP_001129435.1;gbkey=CDS;gene=K15;locus_tag=HHV8GK18_gp85;product=K15;protein_id=YP_001129435.1
+NC_009333.1	RefSeq	CDS	134824	135287	.	-	2	ID=cds-YP_001129435.1;Parent=gene-HHV8GK18_gp85;Dbxref=Genbank:YP_001129435.1,GeneID:4961473;Name=YP_001129435.1;gbkey=CDS;gene=K15;locus_tag=HHV8GK18_gp85;product=K15;protein_id=YP_001129435.1
+NC_009333.1	RefSeq	gene	130655	134589	.	-	.	ID=gene-HHV8GK18_gp86;Dbxref=GeneID:4961476;Name=HHV8GK18_gp86;description=ORF75;gbkey=Gene;gene_biotype=protein_coding;locus_tag=HHV8GK18_gp86
+NC_009333.1	RefSeq	CDS	130699	134589	.	-	0	ID=cds-YP_001129434.1;Parent=gene-HHV8GK18_gp86;Dbxref=Genbank:YP_001129434.1,GeneID:4961476;Name=YP_001129434.1;Note=related to formylglycinamide ribotide amidotransferase (FGARAT);gbkey=CDS;locus_tag=HHV8GK18_gp86;product=ORF75;protein_id=YP_001129434.1
+NC_009333.1	RefSeq	polyA_signal_sequence	130655	130660	.	-	.	ID=id-NC_009333.1:130655..130660;Note=ORF75%2C K15;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	polyA_signal_sequence	130666	130671	.	+	.	ID=id-NC_009333.1:130666..130671;Note=K14%2C ORF74;gbkey=regulatory;regulatory_class=polyA_signal_sequence
+NC_009333.1	RefSeq	repeat_region	137169	137969	.	+	.	ID=id-NC_009333.1:137169..137969;Note=terminal repeat (TR)%3B variable copy numbers at termini of genomic DNA;gbkey=repeat_region
+NC_009333.1	RefSeq	sequence_alteration	137635	137673	.	+	.	ID=id-NC_009333.1:137635..137673;Note=some copies of TR lack 39 bp;gbkey=variation

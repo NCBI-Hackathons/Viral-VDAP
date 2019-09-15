@@ -1,26 +1,3 @@
-# Check for platform: iontorrent or illumina
-platform = config["spades"]["platform"]
-
-# Get list of k-mer sizes
-kmers = config["spades"]["kmer_sizes"]
-
-# if platform is iontorrent, create parameter to be added to SPAdes
-if platform == "iontorrent":
-    is_ion = "--iontorrent"    
-else:
-    is_ion = ""
-
-# if kmer_sizes is not empty, create parameter to be added to SPAdes
-if kmers is not None:
-    has_kmers = "-k {}".format(kmers)
-else:
-    has_kmers = ""
-
-# combine parameters
-add_ons = is_ion + " " + has_kmers
-
-##### Rule #####
-
 rule denovo_assembly:
     """Denovo assembly with SPAdes."""
     input:

@@ -3,18 +3,18 @@
 rule bwa_index:
     """Index consensus FASTA file with BWA"""
     input: 
-       "data/consensus_fasta/{sample}/{sample}_consensus.fasta" 
+       "data/final_scaffolds/{sample}/{sample}_final_scaffold.fasta" 
     output:
-       "data/consensus_fasta/{sample}/{sample}.amb",
-       "data/consensus_fasta/{sample}/{sample}.ann",
-       "data/consensus_fasta/{sample}/{sample}.bwt",
-       "data/consensus_fasta/{sample}/{sample}.pac",
-       "data/consensus_fasta/{sample}/{sample}.sa" 
+       "data/final_scaffolds/{sample}/{sample}.amb",
+       "data/final_scaffolds/{sample}/{sample}.ann",
+       "data/final_scaffolds/{sample}/{sample}.bwt",
+       "data/final_scaffolds/{sample}/{sample}.pac",
+       "data/final_scaffolds/{sample}/{sample}.sa" 
     log: 
-       "data/consensus_fasta/{sample}.log"
+       "data/final_scaffolds/{sample}.log"
     params:
        prefix = "{sample}",
-       directory = "data/consensus_fasta/{sample}"
+       directory = "data/final_scaffolds/{sample}"
     message: "Indexing consensus FASTA file with BWA."
     shell:
         "./bwa-0.7.17/bwa index -p {params.prefix} {input} && mv {params.prefix}* {params.directory}"
@@ -24,15 +24,15 @@ rule bwa_map:
     input:
         r1 = "data/trimmed_reads/{sample}_forward_paired.fq.gz",
         r2 = "data/trimmed_reads/{sample}_reverse_paired.fq.gz",
-        ref_amb = "data/consensus_fasta/{sample}/{sample}.amb",
-        ref_ann = "data/consensus_fasta/{sample}/{sample}.ann",
-        ref_bwt = "data/consensus_fasta/{sample}/{sample}.bwt", 
-        ref_pac = "data/consensus_fasta/{sample}/{sample}.pac", 
-        ref_sa = "data/consensus_fasta/{sample}/{sample}.sa"
+        ref_amb = "data/final_scaffolds/{sample}/{sample}.amb",
+        ref_ann = "data/final_scaffolds/{sample}/{sample}.ann",
+        ref_bwt = "data/final_scaffolds/{sample}/{sample}.bwt", 
+        ref_pac = "data/final_scaffolds/{sample}/{sample}.pac", 
+        ref_sa = "data/final_scaffolds/{sample}/{sample}.sa"
     output:
         "data/mapped_reads/{sample}.bam"
     params: 
-        ref_base = "data/consensus_fasta/{sample}/{sample}"
+        ref_base = "data/final_scaffolds/{sample}/{sample}"
     threads: num_threads
     message: "Mapping reads to consensus FASTA file with BWA."
     log:

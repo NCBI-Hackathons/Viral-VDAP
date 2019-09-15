@@ -1,25 +1,3 @@
-import pandas as pd
-
-# Config file:
-configfile: "config.yaml"
-
-# Read in samples.tsv file
-samples = pd.read_table(config["samples"]).set_index("sample",drop=False)
-               
-# Path to adapters file
-adapters = config["adapters"]
-
-# Number of threads to use
-num_threads = int(config["threads"])
-
-##### Helper functions #####
-
-def get_fastq(wildcards):
-    """Get fastq files of given sample."""
-    return samples.loc[wildcards.sample, ["fq1", "fq2"]].dropna()
-
-##### Rule #####
-
 rule trim_and_filter_reads:
     """Trims and filters reads from paired-end FASTQ files using Trimmomatic."""
     input:

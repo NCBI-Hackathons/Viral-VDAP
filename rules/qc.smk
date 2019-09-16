@@ -1,8 +1,3 @@
-# path to reference genome
-ref_fasta = config["ref"]["genome"]
-
-##### Rule #####
-
 rule fastqc:
     """Generate FastQC reports"""
     input:
@@ -19,12 +14,10 @@ rule fastqc:
     shell:
         "fastqc {input.r1} {input.r2} --outdir {params:} 2> {log}"
 
-##### Rule #####
-
 rule nucmer:
     """Generate delta file to be used to make plots with MUMmer"""
     input:
-        ref = ref_fasta,
+        ref = ref,
         scaffold = "data/assemblies/{sample}/scaffolds.fasta"
     output:
         "data/qc_reports/{sample}/mummerplot/{sample}.delta"
@@ -36,12 +29,10 @@ rule nucmer:
     shell:
         "nucmer {params.prefix} {input.ref} {input.scaffold} 2> {log}"
 
-##### Rule #####
-
 rule mummerplot:
     """Generate plots with MUMmer to assess SPAdes assemblies"""
     input:
-        ref = ref_fasta,
+        ref = ref,
         scaffold = "data/assemblies/{sample}/scaffolds.fasta",
         delta = "data/qc_reports/{sample}/mummerplot/{sample}.delta"
     output:

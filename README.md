@@ -176,6 +176,9 @@ The Docker image contains <this software> as well as a webserver and FTP server 
 
 ### DockerFile
 
+`docker pull vdap/viral_pipeline:pipeline_v1`
+`docker run --name vdap_container -i -t -v /path/to/data vdap/viral_pipeline:pipeline_v1`
+
 <this software> comes with a Dockerfile which can be used to build the Docker image.
 
   1. `git clone https://github.com/NCBI-Hackathons/<this software>.git`
